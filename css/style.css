@@ -244,8 +244,32 @@ html.transition *:after {
   text-align: center;
 }
 
+.aboutMe__section p {
+  line-height: 30px;
+  font-size: 17px;
+}
+
 .aboutMe__section span {
   font-weight: bold;
+}
+
+.aboutMe__section a {
+  text-decoration: none;
+  color: var(--spans);
+  font-weight: bold;
+}
+
+.aboutMe__section .cv_text {
+  margin-bottom: 35px;
+}
+
+.aboutMe__section .Curriculum {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  background-color: var(--spans);
+  color: #fff;
+  border-radius: 15px;
 }
 
 .projects__divider {
@@ -358,29 +382,27 @@ html.transition *:after {
 
 .contact__section ul li {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 30px;
+  display: table;
+  margin: 5px auto;
+  width: 50% !important;
 }
 
 .contact__section ul li i {
   margin: 10px 20px;
 }
 
-.contact__section ul li h6 {
+.contact__section ul li a {
   margin: auto 0;
   font-weight: bold;
+  text-decoration: none;
+  color: var(--spans);
 }
 
 footer {
   height: 20vh;
   position: relative;
   background-color: var(--color-text);
+  margin-top: 40px;
 }
 
 footer p {

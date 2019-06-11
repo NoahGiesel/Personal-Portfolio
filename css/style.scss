@@ -220,8 +220,30 @@ html.transition *:after {
     width: 100%;
     padding: 5px;
     text-align: center;
+
+    p { 
+        line-height: 30px;
+        font-size: 17px;
+    }
+    
     span {
         font-weight: bold;
+    }
+    a { 
+        text-decoration: none;
+        color: var(--spans);
+        font-weight: bold;
+    }
+    .cv_text { 
+        margin-bottom: 35px;
+    }
+    .Curriculum {
+        text-decoration: none;
+        font-weight: bold; 
+        padding: 10px 30px;
+        background-color: var(--spans);
+        color: #fff;
+        border-radius: 15px;
     }
 }
 
@@ -318,21 +340,22 @@ html.transition *:after {
         text-align: center ;  
     } 
     ul {
-        margin: 10px 0;
+        margin: 10px 0; 
     }
     ul li {  
         list-style: none;
-        display: flex; 
-        margin: 0 auto;
-        justify-content: center;
-        margin-right: 30px;
+        display: table;  
+        margin: 5px auto;
+        width: 50% !important; 
         i { 
-            margin: 10px 20px; 
+            margin: 10px 20px;  
         }
-        h6 {
+        a {  
             margin: auto 0 ; 
             font-weight: bold;
-        }
+            text-decoration: none;
+            color: var(--spans); 
+        } 
     }
 }
 
@@ -340,6 +363,7 @@ footer {
     height: 20vh;
     position: relative;
     background-color: var(--color-text);
+    margin-top: 40px;
     p { 
         position: absolute;
         left: 50%;
