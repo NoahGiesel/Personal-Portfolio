@@ -261,7 +261,7 @@ html.transition *:after {
     grid-template-rows: auto auto auto auto;
     
     .project__container { 
-        background-color: var(--bg-panel);
+        background-color: var(--bg);
         border-radius: 10px;
         padding: 15px 10px;
         margin: 30px 0;
@@ -284,9 +284,9 @@ html.transition *:after {
  
         }
         .btn_image { 
-            margin-top: -15px;
+            margin-top: -10px;
             margin-bottom: -10px;
-            padding: 5px 15px;
+            padding: 2px 15px;
             display: flex;
             justify-content: space-evenly;
              
@@ -294,7 +294,7 @@ html.transition *:after {
                  border-radius: 10px;
                 background-color: var(--spans);
                 color: #fff;
-                font-size: 20px;
+                font-size: 17px;
                 text-decoration: none;
                 cursor: pointer;
             }
