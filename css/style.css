@@ -23,12 +23,12 @@ span {
 }
 
 html {
-  --bg:#f7f7f7;
-  --bg-panel:#f8f0ee;
+  --bg:#fffbfb;
+  --bg-panel:#fffbfb;
   --color-heading: #333;
   --color-text: #333333;
-  --color-red: #f32727;
-  --buttons: #f32727;
+  --color-red: #ff1f3d;
+  --buttons: #ff1f3d;
   --spans: #333333;
 }
 
@@ -36,10 +36,10 @@ html[data-theme='dark'] {
   --bg:#333333;
   --bg-panel:#434343;
   --color-heading: #3694ff;
-  --color-text: #f0f0f0;
-  --color-red: #f32727;
-  --buttons: #f32727;
-  --spans: #f32727;
+  --color-text: #fffbfb;
+  --color-red: #ff1f3d;
+  --buttons: #ff1f3d;
+  --spans: #ff1f3d;
 }
 
 html, body {
@@ -223,7 +223,7 @@ html.transition *:after {
 .landing__section .text__section button {
   padding: 7px 25px;
   background-color: var(--buttons);
-  border-radius: 20px;
+  border-radius: 5px;
   color: #fff;
   margin: 40px  20px;
 }
@@ -245,7 +245,7 @@ html.transition *:after {
 }
 
 .aboutMe__section p {
-  line-height: 30px;
+  line-height: 35px;
   font-size: 17px;
 }
 
@@ -269,7 +269,7 @@ html.transition *:after {
   padding: 10px 30px;
   background-color: var(--spans);
   color: #fff;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .projects__divider {
@@ -325,8 +325,8 @@ html.transition *:after {
 }
 
 .projects__section .project__container .image__container .btn_image a {
-  border-radius: 10px;
-  background-color: var(--spans);
+  border-radius: 5px;
+  background-color: var(--buttons);
   color: #fff;
   font-size: 17px;
   text-decoration: none;
@@ -355,8 +355,8 @@ html.transition *:after {
 .projects__section .project__container .stackUsed__section p {
   margin: 0 10px;
   padding: 3px 8px;
-  border-radius: 10px;
-  background-color: var(--spans);
+  border-radius: 5px;
+  background-color: var(--buttons);
   color: #fff;
 }
 
@@ -382,8 +382,13 @@ html.transition *:after {
 
 .contact__section ul li {
   list-style: none;
-  display: table;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 5px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50% !important;
 }
 

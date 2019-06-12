@@ -33,12 +33,12 @@ span {
     color: var(--spans);
 }
 html {
-    --bg :#f7f7f7; 
-    --bg-panel :#f8f0ee;
+    --bg :#fffbfb; 
+    --bg-panel :#fffbfb;
     --color-heading: #333;
     --color-text : #333333;
-    --color-red : #f32727;
-    --buttons : #f32727;
+    --color-red : #ff1f3d;
+    --buttons : #ff1f3d;
     --spans : #333333;
 }
 
@@ -46,10 +46,10 @@ html[data-theme='dark'] {
     --bg :#333333;
     --bg-panel :#434343;
     --color-heading: #3694ff;
-    --color-text : #f0f0f0;
-    --color-red : #f32727;
-    --buttons : #f32727;
-    --spans : #f32727;
+    --color-text : #fffbfb;
+    --color-red : #ff1f3d;
+    --buttons : #ff1f3d;
+    --spans : #ff1f3d;
 
 }
 
@@ -198,7 +198,7 @@ html.transition *:after {
         button { 
             padding: 7px 25px ; 
             background-color: var(--buttons);
-            border-radius: 20px; 
+            border-radius: 5px; 
             color: #fff;
             margin: 40px  20px;
         }    
@@ -222,7 +222,7 @@ html.transition *:after {
     text-align: center;
 
     p { 
-        line-height: 30px;
+        line-height: 35px;
         font-size: 17px;
     }
     
@@ -243,7 +243,7 @@ html.transition *:after {
         padding: 10px 30px;
         background-color: var(--spans);
         color: #fff;
-        border-radius: 15px;
+        border-radius: 5px;
     }
 }
 
@@ -291,8 +291,8 @@ html.transition *:after {
             justify-content: space-evenly;
              
             a {
-                 border-radius: 10px;
-                background-color: var(--spans);
+                 border-radius: 5px;
+                background-color:  var(--buttons);
                 color: #fff;
                 font-size: 17px;
                 text-decoration: none;
@@ -315,8 +315,8 @@ html.transition *:after {
         p { 
             margin: 0 10px;
             padding: 3px 8px;
-            border-radius: 10px;
-            background-color: var(--spans);
+            border-radius: 5px;
+            background-color:  var(--buttons);
             color: #fff;
         }
     }
@@ -344,14 +344,16 @@ html.transition *:after {
     }
     ul li {  
         list-style: none;
-        display: table;  
+        display: flex;  
         margin: 5px auto;
-        width: 50% !important; 
+        justify-content: center; 
+        width: 50% !important;
         i { 
-            margin: 10px 20px;  
+            margin: 10px 20px; 
+
         }
         a {  
-            margin: auto 0 ; 
+             margin: auto 0 ;  
             font-weight: bold;
             text-decoration: none;
             color: var(--spans); 
