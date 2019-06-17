@@ -219,10 +219,12 @@ html.transition *:after {
 }
 
 .aboutMe__section { 
-    width: 100%;
+    width: 90%;
     padding: 5px;
     text-align: center; 
     letter-spacing: 1px;
+    margin: 0 auto;
+
     p { 
         line-height: 35px;
         font-size: 17px;
@@ -270,7 +272,7 @@ html.transition *:after {
         margin: 0 auto;
         text-align: center;
         background-color: var(--color-text);
-        border-radius: 10px;
+        border-radius: 8px;
          
         .stack_img {
             color: var(--bg-panel);
@@ -280,6 +282,15 @@ html.transition *:after {
         }
         p {
             color: var(--bg-panel);
+            letter-spacing: 2px;
+            line-height: 21px;
+
+            span { 
+                color: var(--color-red);
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
         }
     }
 }
@@ -355,10 +366,13 @@ html.transition *:after {
             border-radius: 5px;
             background-color:  var(--buttons);
             color: #fff;  
+            line-height: 35px;
+            letter-spacing: 2px;
         }
  
-        .stack { 
+        span { 
             color: var(--color-red) !important;
+            letter-spacing: 2px;
         }
     }
 }

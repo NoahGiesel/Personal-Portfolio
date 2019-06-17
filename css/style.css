@@ -239,10 +239,11 @@ html.transition *:after {
 }
 
 .aboutMe__section {
-  width: 100%;
+  width: 90%;
   padding: 5px;
   text-align: center;
   letter-spacing: 1px;
+  margin: 0 auto;
 }
 
 .aboutMe__section p {
@@ -293,7 +294,7 @@ html.transition *:after {
   margin: 0 auto;
   text-align: center;
   background-color: var(--color-text);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .currentStack__section .stack__info .stack_img {
@@ -308,6 +309,15 @@ html.transition *:after {
 
 .currentStack__section .stack__info p {
   color: var(--bg-panel);
+  letter-spacing: 2px;
+  line-height: 21px;
+}
+
+.currentStack__section .stack__info p span {
+  color: var(--color-red);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .projects__divider {
@@ -396,10 +406,13 @@ html.transition *:after {
   border-radius: 5px;
   background-color: var(--buttons);
   color: #fff;
+  line-height: 35px;
+  letter-spacing: 2px;
 }
 
-.projects__section .project__container .stackUsed__section .stack {
+.projects__section .project__container .stackUsed__section span {
   color: var(--color-red) !important;
+  letter-spacing: 2px;
 }
 
 .contact__divider {
