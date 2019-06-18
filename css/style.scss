@@ -262,9 +262,11 @@ html.transition *:after {
     width: 100%;
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-gap: 20px;
+    grid-gap: 25px;
     margin: 35px 0 ;  
- 
+    padding: 60px 0;
+    background-color: var(--color-text);
+    border-radius: 20px;
 
     .stack__info {
         width: 90%; 
@@ -272,13 +274,17 @@ html.transition *:after {
         margin: 0 auto;
         text-align: center;
         background-color: var(--color-text);
+        border: 2px solid var(--bg-panel);
         border-radius: 8px;
          
         .stack_img {
-            color: var(--bg-panel);
+            color:  var(--bg-panel);
             margin: 15px 0;
             display: flex;
             justify-content: space-around;
+            i{
+                color: var(--bg-panel) !important;
+            }
         }
         p {
             color: var(--bg-panel);
@@ -360,6 +366,7 @@ html.transition *:after {
         display: flex; 
         justify-content: space-evenly;
         margin: 20px 0;
+
         p { 
             margin: 0 10px;
             padding: 3px 8px;

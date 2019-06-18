@@ -284,8 +284,11 @@ html.transition *:after {
   display: grid;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
-  grid-gap: 20px;
+  grid-gap: 25px;
   margin: 35px 0;
+  padding: 60px 0;
+  background-color: var(--color-text);
+  border-radius: 20px;
 }
 
 .currentStack__section .stack__info {
@@ -294,6 +297,7 @@ html.transition *:after {
   margin: 0 auto;
   text-align: center;
   background-color: var(--color-text);
+  border: 2px solid var(--bg-panel);
   border-radius: 8px;
 }
 
@@ -305,6 +309,10 @@ html.transition *:after {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.currentStack__section .stack__info .stack_img i {
+  color: var(--bg-panel) !important;
 }
 
 .currentStack__section .stack__info p {
