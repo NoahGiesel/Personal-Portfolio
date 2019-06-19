@@ -122,6 +122,24 @@ html.transition *:after {
   top: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .landing__section .text__section {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    left: 20%;
+    top: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing__section .text__section {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    left: 15%;
+    top: 50%;
+  }
+}
+
 .landing__section .text__section h2 {
   color: var(--color-text);
 }
@@ -142,10 +160,22 @@ html.transition *:after {
   color: var(--color-text);
 }
 
+@media screen and (min-width: 768px) {
+  .landing__section .text__section p {
+    margin-top: 20px;
+  }
+}
+
 .landing__section .text__section .slider {
   height: 28px;
   padding: 0 10px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .landing__section .text__section .slider {
+    margin-top: 20px;
+  }
 }
 
 .landing__section .text__section .slider div {
@@ -234,8 +264,32 @@ html.transition *:after {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .aboutMe__divider h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutMe__divider h2 {
+    font-size: 59px;
+  }
+}
+
 .aboutMe__divider p {
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutMe__divider p {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutMe__divider p {
+    font-size: 25px;
+  }
 }
 
 .aboutMe__section {
@@ -246,10 +300,30 @@ html.transition *:after {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .aboutMe__section {
+    margin: 30px auto;
+  }
+}
+
 .aboutMe__section p {
   line-height: 35px;
   font-size: 17px;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutMe__section p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutMe__section p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 50px;
+  }
 }
 
 .aboutMe__section span {
@@ -264,8 +338,18 @@ html.transition *:after {
   letter-spacing: 1px;
 }
 
+.aboutMe__section a:hover {
+  text-decoration: underline;
+}
+
 .aboutMe__section .cv_text {
   margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutMe__section .cv_text {
+    margin-bottom: 55px;
+  }
 }
 
 .aboutMe__section .Curriculum {
@@ -276,6 +360,13 @@ html.transition *:after {
   color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
+  margin: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutMe__section .Curriculum {
+    font-size: 22px;
+  }
 }
 
 .currentStack__section {
@@ -291,6 +382,40 @@ html.transition *:after {
   border-radius: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .currentStack__section {
+    margin: 55px 0;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .currentStack__section {
+    font-size: 21px;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .currentStack__section .thirdStack {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .currentStack__section .thirdStack {
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+}
+
 .currentStack__section .stack__info {
   width: 90%;
   padding: 15px;
@@ -299,6 +424,12 @@ html.transition *:after {
   background-color: var(--color-text);
   border: 2px solid var(--bg-panel);
   border-radius: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .currentStack__section .stack__info {
+    max-width: 400px;
+  }
 }
 
 .currentStack__section .stack__info .stack_img {
@@ -321,6 +452,12 @@ html.transition *:after {
   line-height: 21px;
 }
 
+@media screen and (min-width: 1024px) {
+  .currentStack__section .stack__info p {
+    line-height: 30px;
+  }
+}
+
 .currentStack__section .stack__info p span {
   color: var(--color-red);
   font-weight: bold;
@@ -334,12 +471,38 @@ html.transition *:after {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .projects__divider h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__divider h2 {
+    font-size: 59px;
+  }
+}
+
 .projects__section {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto auto auto;
-      grid-template-rows: auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__section {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .projects__section {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
 }
 
 .projects__section .project__container {
@@ -349,13 +512,28 @@ html.transition *:after {
   margin: 30px 0;
   -webkit-transition-duration: 600ms;
           transition-duration: 600ms;
+  /*  
+        &:hover {
+            -webkit-box-shadow: 2px 6px 13px 0px var(--color-text);
+            -moz-box-shadow: 2px 6px 13px 0px  var(--color-text);
+            box-shadow: 2px 6px 13px 0px  var(--color-text);
+            transform: translateY(-1%); 
+
+        }
+
+        */
 }
 
-.projects__section .project__container:hover {
-  -webkit-box-shadow: 2px 6px 13px 0px var(--color-text);
-  box-shadow: 2px 6px 13px 0px var(--color-text);
-  -webkit-transform: translateY(-1%);
-          transform: translateY(-1%);
+@media screen and (min-width: 768px) {
+  .projects__section .project__container {
+    padding: 25px 15px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .projects__section .project__container {
+    padding: 75px 55px;
+  }
 }
 
 .projects__section .project__container .image__container {
@@ -390,7 +568,7 @@ html.transition *:after {
 }
 
 .projects__section .project__container h2 {
-  margin: 20px 0 10px 0;
+  margin: 45px 0 20px 0;
   text-align: center;
 }
 
@@ -429,14 +607,38 @@ html.transition *:after {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .contact__divider h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__divider h2 {
+    font-size: 59px;
+  }
+}
+
 .contact__section {
   width: 100%;
   margin: 10px 0;
   padding: 0 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .contact__section {
+    margin: 50px 0;
+  }
+}
+
 .contact__section p {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__section p {
+    font-size: 21px;
+  }
 }
 
 .contact__section ul {
@@ -453,6 +655,13 @@ html.transition *:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__section ul li {
+    font-size: 21px;
+    margin: 15px auto;
+  }
 }
 
 .contact__section ul li i {
