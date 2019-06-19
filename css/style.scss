@@ -442,6 +442,8 @@ html.transition *:after {
     }
     @media screen and ( min-width: 1500px ) { 
         grid-template-columns: auto auto auto ;
+        max-width: 70%;
+        margin: 0 auto;
     }
 
     
@@ -457,6 +459,10 @@ html.transition *:after {
         } 
         @media screen and ( min-width: 1500px ) { 
             padding: 75px 55px;
+            margin: 0; 
+            padding: 10px;
+            border: 2px solid rgba(161, 161, 161, 0.76);
+            transform: scale(0.8);
         }
 
         /*  
@@ -557,33 +563,9 @@ html.transition *:after {
             font-size: 21px;
         }
     } 
-    ul {
-        margin: 10px 0; 
-    }
-    ul li {  
-        list-style: none;
-        display: flex;  
-        margin: 5px auto;   
-        width: 50% !important;
-        justify-content: center;
-
-        @media screen and ( min-width:768px ) { 
-            font-size: 21px;
-            margin: 15px auto;   
-
-        }
-
-        i {  
-            margin-right: 30px;
-        }
-        a {  
-             margin: auto 0 ;  
-            font-weight: bold;
-            text-decoration: none;
-            color: var(--spans); 
-        } 
-    }
-}
+     
+ }
+ 
 
 footer { 
     height: 20vh;

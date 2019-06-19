@@ -502,6 +502,8 @@ html.transition *:after {
   .projects__section {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -533,6 +535,11 @@ html.transition *:after {
 @media screen and (min-width: 1500px) {
   .projects__section .project__container {
     padding: 75px 55px;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid rgba(161, 161, 161, 0.76);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -639,40 +646,6 @@ html.transition *:after {
   .contact__section p {
     font-size: 21px;
   }
-}
-
-.contact__section ul {
-  margin: 10px 0;
-}
-
-.contact__section ul li {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 5px auto;
-  width: 50% !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .contact__section ul li {
-    font-size: 21px;
-    margin: 15px auto;
-  }
-}
-
-.contact__section ul li i {
-  margin-right: 30px;
-}
-
-.contact__section ul li a {
-  margin: auto 0;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--spans);
 }
 
 footer {
