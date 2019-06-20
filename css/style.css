@@ -72,6 +72,10 @@ label {
   margin-left: 50px;
 }
 
+.img__landing {
+  z-index: 0;
+}
+
 label:after {
   content: '';
   position: absolute;
@@ -120,6 +124,7 @@ html.transition *:after {
   position: absolute;
   left: 5%;
   top: 50%;
+  z-index: 10;
 }
 
 @media screen and (min-width: 768px) {
@@ -256,6 +261,19 @@ html.transition *:after {
   border-radius: 5px;
   color: #fff;
   margin: 40px  20px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.landing__section .text__section button:hover {
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.767);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.795);
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  color: var(--buttons);
+  border: 2px solid rgba(238, 33, 33, 0.644);
 }
 
 .aboutMe__divider {
@@ -379,7 +397,6 @@ html.transition *:after {
   margin: 35px 0;
   padding: 60px 0;
   background-color: var(--color-text);
-  border-radius: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -397,7 +414,6 @@ html.transition *:after {
         grid-template-columns: auto auto auto;
     -ms-grid-rows: none;
         grid-template-rows: none;
-    border-radius: 0;
   }
 }
 
@@ -509,26 +525,27 @@ html.transition *:after {
 
 .projects__section .project__container {
   background-color: var(--bg);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 15px 10px;
   margin: 30px 0;
   -webkit-transition-duration: 600ms;
           transition-duration: 600ms;
-  /*  
-        &:hover {
-            -webkit-box-shadow: 2px 6px 13px 0px var(--color-text);
-            -moz-box-shadow: 2px 6px 13px 0px  var(--color-text);
-            box-shadow: 2px 6px 13px 0px  var(--color-text);
-            transform: translateY(-1%); 
-
-        }
-
-        */
 }
 
 @media screen and (min-width: 768px) {
   .projects__section .project__container {
     padding: 25px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__section .project__container {
+    padding: 55px 35px;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid rgba(161, 161, 161, 0.76);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
@@ -574,6 +591,12 @@ html.transition *:after {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .projects__section .project__container .image__container .btn_image a {
+    font-size: 25px;
+  }
+}
+
 .projects__section .project__container h2 {
   margin: 45px 0 20px 0;
   text-align: center;
@@ -581,6 +604,12 @@ html.transition *:after {
 
 .projects__section .project__container p {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__section .project__container p {
+    font-size: 21px;
+  }
 }
 
 .projects__section .project__container .stackUsed__section {
@@ -601,6 +630,12 @@ html.transition *:after {
   color: #fff;
   line-height: 35px;
   letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__section .project__container .stackUsed__section p {
+    font-size: 21px;
+  }
 }
 
 .projects__section .project__container .stackUsed__section span {

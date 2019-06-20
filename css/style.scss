@@ -72,6 +72,7 @@ input[type=checkbox]{
     visibility: hidden;
     margin: auto 0;
 }
+ 
 
 label {
 	cursor: pointer;
@@ -87,6 +88,9 @@ label {
 
 }
 
+.img__landing {
+    z-index: 0
+}
 label:after {
 	content: '';
 	position: absolute;
@@ -135,15 +139,13 @@ html.transition *:after {
     height: 100%;
     background-color: var(--bg);
     position: relative; 
-
-
-  
+ 
     
     .text__section {  
         position: absolute ; 
         left: 5%;
         top: 50%;  
-
+        z-index: 10;
         @media screen and ( min-width:768px ) { 
             transform: scale(1.4);
             left: 20%;
@@ -218,13 +220,25 @@ html.transition *:after {
              70%{margin-top: 0px}
              100%{margin-top:  0px} 
          }
+         
 
         button { 
             padding: 7px 25px ; 
             background-color: var(--buttons);
             border-radius: 5px; 
             color: #fff;
-            margin: 40px  20px;
+            margin: 40px  20px;  
+            border: 2px solid rgba(0, 0, 0, 0.0);
+            transition: 200ms;
+
+            &:hover {  
+                background: none;
+                -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.767);
+                -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.795);
+                transition: all 0.2s ease 0s;
+                color :var(--buttons);
+                border: 2px solid rgba(238, 33, 33, 0.644);;
+            }
         }    
     } 
      
@@ -336,8 +350,7 @@ html.transition *:after {
     grid-gap: 25px;
     margin: 35px 0 ;  
     padding: 60px 0;
-    background-color: var(--color-text);
-    border-radius: 20px; 
+    background-color: var(--color-text); 
 
     @media screen and ( min-width:768px ) { 
         margin: 55px 0 ; 
@@ -348,8 +361,7 @@ html.transition *:after {
     @media screen and ( min-width:1024px ) { 
         font-size: 21px;
         grid-template-columns: auto auto auto ; 
-        grid-template-rows: none ;  
-        border-radius: 0; 
+        grid-template-rows: none ; 
 
   
     }
@@ -449,7 +461,7 @@ html.transition *:after {
     
     .project__container { 
         background-color: var(--bg);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 15px 10px;
         margin: 30px 0;
         transition-duration: 600ms;
@@ -457,6 +469,13 @@ html.transition *:after {
         @media screen and ( min-width:768px ) { 
             padding: 25px 15px;
         } 
+        @media screen and ( min-width: 1200px ) { 
+            padding: 55px 35px;
+            margin: 0; 
+            padding: 10px;
+            border: 2px solid rgba(161, 161, 161, 0.76);
+            transform: scale(0.9); 
+        }
         @media screen and ( min-width: 1500px ) { 
             padding: 75px 55px;
             margin: 0; 
@@ -464,18 +483,7 @@ html.transition *:after {
             border: 2px solid rgba(161, 161, 161, 0.76);
             transform: scale(0.8);
         }
-
-        /*  
-        &:hover {
-            -webkit-box-shadow: 2px 6px 13px 0px var(--color-text);
-            -moz-box-shadow: 2px 6px 13px 0px  var(--color-text);
-            box-shadow: 2px 6px 13px 0px  var(--color-text);
-            transform: translateY(-1%); 
-
-        }
-
-        */
-     
+  
     .image__container {
         width: 100%;
         position: relative; 
@@ -499,6 +507,11 @@ html.transition *:after {
                 font-size: 17px;
                 text-decoration: none;
                 cursor: pointer;
+                
+            @media screen and ( min-width: 1200px ) { 
+
+                font-size: 25px;
+            }
             }
         } 
     }
@@ -508,6 +521,11 @@ html.transition *:after {
     }
     p {
         text-align: center;
+        
+        @media screen and ( min-width: 1200px ) { 
+
+            font-size: 21px;
+        }
     }
  
     .stackUsed__section { 
@@ -522,7 +540,13 @@ html.transition *:after {
             background-color:  var(--buttons);
             color: #fff;  
             line-height: 35px;
-            letter-spacing: 2px;
+            letter-spacing: 2px; 
+
+            
+            @media screen and ( min-width: 1200px ) { 
+
+                font-size: 21px;
+            }
         }
  
         span { 
