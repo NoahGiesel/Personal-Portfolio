@@ -1,4 +1,18 @@
+// PARTICLES
+
  
+
+particlesJS.load('particles-js', './particles.json', function() {
+
+    console.log("loaded");
+
+  });
+
+
+
+
+
+
 //theme changer
 
 var checkbox = document.querySelector('input[name=theme]');

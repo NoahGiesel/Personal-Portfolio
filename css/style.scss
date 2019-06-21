@@ -87,10 +87,7 @@ label {
     margin-left: 50px;
 
 }
-
-.img__landing {
-    z-index: 0
-}
+ 
 label:after {
 	content: '';
 	position: absolute;
@@ -137,30 +134,70 @@ html.transition *:after {
 .landing__section {
     width: 100%;
     height: 100%;
-    background-color: var(--bg);
-    position: relative; 
- 
-    
+    background-color: --bg-panel;
+    position: relative;  
+
+
+    #particles-js{ 
+        position:absolute; 
+        width: 100%; 
+        height: 100%;       
+    } 
+    /* ---- stats.js ---- */ 
+    .count-particles{ 
+        background: #000022; 
+        position: absolute; 
+        top: 48px; 
+        left: 0; 
+        width: 80px; 
+        color: #13E8E9; 
+        font-size: .8em; 
+        text-align: left; 
+        text-indent: 4px; 
+        line-height: 14px; 
+        padding-bottom: 2px; 
+        font-family: Helvetica, Arial, sans-serif; 
+        font-weight: bold; 
+    } 
+    .js-count-particles{ 
+        font-size: 1.1em; 
+    } 
+    #stats, 
+    .count-particles{
+            -webkit-user-select: none;
+             margin-top: 5px;
+              margin-left: 5px;
+     } 
+     #stats{ 
+         border-radius: 3px 3px 0 0; 
+         overflow: hidden; 
+    } 
+    .count-particles{
+         border-radius: 0 0 3px 3px; 
+    }
+
+
     .text__section {  
-        position: absolute ; 
-        left: 5%;
-        top: 50%;  
+        position: absolute ;             
+        left: 10%;
+        top: 50%; 
         z-index: 10;
+
+
         @media screen and ( min-width:768px ) { 
             transform: scale(1.4);
-            left: 20%;
-            top: 60%;
+            left: 10%;
+            top: 50%; 
         }
 
         @media screen and ( min-width:1024px ) { 
             transform: scale(1.5);
-            left: 15%;
-            top: 50%;
+            left: 10%;
+            top: 50%; 
         }
 
         h2 {
-            color: var(--color-text); 
- 
+            color: var(--color-text);  
         }
 
 
@@ -384,7 +421,7 @@ html.transition *:after {
         margin: 0 auto;
         text-align: center;
         background-color: var(--color-text);
-        border: 2px solid var(--bg-panel);
+        border: 1px solid var(--bg-panel);
         border-radius: 8px;
 
 
@@ -406,7 +443,7 @@ html.transition *:after {
         p {
             color: var(--bg-panel);
             letter-spacing: 2px;
-            line-height: 21px;
+            line-height: 20px;
 
             
 
@@ -439,124 +476,131 @@ html.transition *:after {
         @media screen and ( min-width: 1024px ) { 
             font-size: 59px;
         }
-    }
-
-    
+    }  
 }
 
-.projects__section {
-    width: 100%; 
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto;
-
-    @media screen and ( min-width:768px ) { 
-        grid-template-columns: auto auto ;
-    }
-    @media screen and ( min-width: 1500px ) { 
-        grid-template-columns: auto auto auto ;
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-    
-    .project__container { 
-        background-color: var(--bg);
-        border-radius: 5px;
-        padding: 15px 10px;
-        margin: 30px 0;
-        transition-duration: 600ms;
-
-        @media screen and ( min-width:768px ) { 
-            padding: 25px 15px;
-        } 
-        @media screen and ( min-width: 1200px ) { 
-            padding: 55px 35px;
-            margin: 0; 
-            padding: 10px;
-            border: 2px solid rgba(161, 161, 161, 0.76);
-            transform: scale(0.9); 
-        }
-        @media screen and ( min-width: 1500px ) { 
-            padding: 75px 55px;
-            margin: 0; 
-            padding: 10px;
-            border: 2px solid rgba(161, 161, 161, 0.76);
-            transform: scale(0.8);
-        }
-  
-    .image__container {
-        width: 100%;
-        position: relative; 
-        img {
-            width: 100%;    
-            border-radius: 10px;
-            
+.invert__element {  
+    .project__container {
  
-        }
-        .btn_image { 
-            margin-top: -10px;
-            margin-bottom: -10px;
-            padding: 2px 15px;
-            display: flex;
-            justify-content: space-evenly;
+        .image__site {
+            grid-column:   1 ;  
+            @media screen and ( min-width: 1200px ) { 
+                grid-column:   2 ; 
+                grid-row:   1 ; 
+            }
              
-            a {
-                 border-radius: 5px;
-                background-color:  var(--buttons);
-                color: #fff;
-                font-size: 17px;
-                text-decoration: none;
-                cursor: pointer;
-                
-            @media screen and ( min-width: 1200px ) { 
+        }
 
-                font-size: 25px;
+        .text__site { 
+            grid-column: 1;
+            @media screen and ( min-width: 1200px ) { 
+                grid-column: 1;
             }
-            }
-        } 
+             
+        }
+
     }
-    h2 {
-        margin: 45px 0 20px 0;
-        text-align: center;
+}
+
+.project__section  {
+    width: 100%;
+    margin: 0 ;
+    padding: 10px 5px; 
+
+    @media screen and ( min-width: 1024px ) { 
+        padding: 0  15px; 
     }
-    p {
-        text-align: center;
-        
+
+    .project__container {
+        display: grid ; 
+        grid-template-rows: auto  auto ;
+        grid-gap: 10px;
+        margin: 70px 0;
+
         @media screen and ( min-width: 1200px ) { 
-
-            font-size: 21px;
+            grid-template-rows: none ;
+            grid-template-columns:  50% 50%  ; 
+            width: 60%;
+            margin: 100px auto;
         }
-    }
- 
-    .stackUsed__section { 
-        display: flex; 
-        justify-content: space-evenly;
-        margin: 20px 0;
 
-        p { 
-            margin: 0 10px;
-            padding: 3px 8px;
-            border-radius: 5px;
-            background-color:  var(--buttons);
-            color: #fff;  
-            line-height: 35px;
-            letter-spacing: 2px; 
+        .image__site {
+            width: 100%;
 
-            
-            @media screen and ( min-width: 1200px ) { 
-
-                font-size: 21px;
+            img {
+                width: 100%;
+                border-radius: 10px;
+                transform-style: preserve-3d;
+                transform: perspective(1000px);
+                -webkit-box-shadow: 3px -1px 67px -20px rgba(0,0,0,0.75);
+                -moz-box-shadow: 3px -1px 67px -20px rgba(0,0,0,0.75);
+                box-shadow: 3px -1px 67px -20px rgba(0,0,0,0.75);
+                
             }
         }
+
+        .text__site{
+            width: 100%;
+            display: grid ; 
+            grid-template-rows: auto  auto auto;
+            grid-gap: 5px;
+            text-align: center;
+            letter-spacing: 1px;    
  
-        span { 
-            color: var(--color-red) !important;
-            letter-spacing: 2px;
+ 
+            p {
+                margin: 20px 0;
+            }
+
+            .button__row {
+                display: flex;
+                justify-content: space-around;
+                width: 50%;
+                margin:  0 auto;
+
+                a {
+                    text-decoration: none;
+                    padding: 8px 15px;
+                    background-color: var(--color-text);
+                    color :  var(--bg-panel);
+                    border-radius: 10px;
+                    max-height: 40px;
+                }
+            }
+
+
+            ul   { 
+                display: flex;
+                justify-content: space-around;
+                margin: 30px 0;
+
+                @media screen and ( min-width: 1024px ) { 
+                    margin:   0;
+                    align-items: center
+                }
+
+                li {
+                    list-style-type: circle;
+                    text-transform: uppercase;
+                }
+                 
+            }
+
         }
+
+
+
+
     }
-}
+
+
 }
 
+
+
+
+
+ 
 .contact__divider { 
     width: 100%;
     margin: 10px 0 20px 0 ;
