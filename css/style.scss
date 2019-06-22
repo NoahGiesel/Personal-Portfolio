@@ -525,17 +525,32 @@ html.transition *:after {
         }
 
         .image__site {
-            width: 100%;
-
-            img {
+            width: 100%; 
+            
+            .img__top {
                 width: 100%;
                 border-radius: 10px;
                 transform-style: preserve-3d;
                 transform: perspective(1000px);
                 -webkit-box-shadow: 3px -1px 67px -20px rgba(0,0,0,0.75);
                 -moz-box-shadow: 3px -1px 67px -20px rgba(0,0,0,0.75);
-                box-shadow: 3px -1px 67px -20px rgba(0,0,0,0.75);
-                
+                box-shadow: 3px -1px 67px -20px rgba(0,0,0,0.75); 
+            }
+            .firstimage {
+                background-image: url("../img/nasa_api_bottom.png");
+                background-size: cover;
+                width: 100%;
+            } 
+            .secondimage {
+                background-image: url("../img/react_weather_bottom.png");
+                background-size: cover;
+                width: 100%;
+            } 
+
+            .img__bottom {
+                width: 100%;
+                transform-style: preserve-3d;
+                transform: translateZ(20px)
             }
         }
 

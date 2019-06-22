@@ -600,7 +600,7 @@ html.transition *:after {
   width: 100%;
 }
 
-.project__section .project__container .image__site img {
+.project__section .project__container .image__site .img__top {
   width: 100%;
   border-radius: 10px;
   -webkit-transform-style: preserve-3d;
@@ -609,6 +609,26 @@ html.transition *:after {
           transform: perspective(1000px);
   -webkit-box-shadow: 3px -1px 67px -20px rgba(0, 0, 0, 0.75);
   box-shadow: 3px -1px 67px -20px rgba(0, 0, 0, 0.75);
+}
+
+.project__section .project__container .image__site .firstimage {
+  background-image: url("../img/nasa_api_bottom.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.project__section .project__container .image__site .secondimage {
+  background-image: url("../img/react_weather_bottom.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.project__section .project__container .image__site .img__bottom {
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
 }
 
 .project__section .project__container .text__site {
