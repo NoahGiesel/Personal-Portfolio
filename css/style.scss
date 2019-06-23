@@ -129,28 +129,32 @@ html.transition *:after {
  
  
 //landing section
-
+ 
 
 .landing__section {
     width: 100%;
     height: 100%;
     background-color: --bg-panel;
-    position: relative;  
-
+    position: relative; 
+    .img__landing { 
+        height: 100%;
+        width: 100%;
+        position: relative;
+ 
+    }
+ 
 
     #particles-js{ 
         position:absolute; 
         width: 100%; 
-        height: 100%;       
+        height: 100%;     
     } 
     /* ---- stats.js ---- */ 
-    .count-particles{ 
-        background: #000022; 
+    .count-particles{   
         position: absolute; 
         top: 48px; 
         left: 0; 
-        width: 80px; 
-        color: #13E8E9; 
+        width: 80px;  
         font-size: .8em; 
         text-align: left; 
         text-indent: 4px; 
@@ -494,7 +498,7 @@ html.transition *:after {
         .text__site { 
             grid-column: 1;
             @media screen and ( min-width: 1200px ) { 
-                grid-column: 1;
+                grid-column: 1; 
             }
              
         }
@@ -565,6 +569,7 @@ html.transition *:after {
  
             p {
                 margin: 20px 0;
+                line-height: 35px;
             }
 
             .button__row {
@@ -646,15 +651,154 @@ html.transition *:after {
             font-size: 21px;
         }
     } 
-     
- }
+
+
+    .contact_ul { 
+        width: 40%;
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-around;
+        a { 
+            text-decoration: none;
+        } 
+        #hexagon {
+            width: 100px;
+            height: 60px;
+            background: var(--color-text);
+            position: relative; 
+           text-align: center;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+
+
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                color: var(--bg-panel)
+            }
+
+
+
+        }
+        #hexagon:before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 25px solid  var(--color-text);
+            -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+        #hexagon:after {
+            content: "";
+            position: absolute;
+            bottom: -24px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 25px solid  var(--color-text);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        // Linkedin
+        .linkedin:hover{
+          background: rgb(4, 217, 255) !important;
+        }
+        
+        .linkedin:hover:after{
+          border-top: 25px solid rgb(4, 217, 255)!important;
+        }
+       .linkedin:hover:before{
+          border-bottom: 25px solid rgb(4, 217, 255)!important;
+        }
+
+        //Gmail
+        .gmail:hover{
+            background: rgb(255, 4, 4) !important;
+          }
+          
+          .gmail:hover:after{
+            border-top: 25px solid rgb(255, 4, 4)!important;
+          }
+         .gmail:hover:before{
+            border-bottom: 25px solid rgb(255, 4, 4)!important;
+          }
+          
+          //github
+          .github:hover{
+            background: rgb(0, 0, 0) !important;
+          }
+          
+          .github:hover:after{
+            border-top: 25px solid rgb(0, 0, 0)!important;
+          }
+         .github:hover:before{
+            border-bottom: 25px solid rgb(0, 0, 0)!important;
+          }
+
+          //instagram 
+
+          .instagram:hover{
+            background: rgb(255, 32, 236)!important;
+          }
+          
+          .instagram:hover:after{
+            border-top: 25px solid rgb(255, 32, 236)!important;
+          }
+         .instagram:hover:before{
+            border-bottom: 25px solid rgb(255, 32, 236)!important;
+          }
+
+         //youtube
+        .youtube:hover{
+            background: rgb(255, 4, 4) !important;
+          }
+          
+          .youtube:hover:after{
+            border-top: 25px solid rgb(255, 4, 4)!important;
+          }
+         .youtube:hover:before{
+            border-bottom: 25px solid rgb(255, 4, 4)!important;
+          }
+        // twitter
+        .twitter:hover{
+          background: rgb(4, 217, 255) !important;
+        }
+        
+        .twitter:hover:after{
+          border-top: 25px solid rgb(4, 217, 255)!important;
+        }
+       .twitter:hover:before{
+          border-bottom: 25px solid rgb(4, 217, 255)!important;
+        }
+
+
+    }
+}
  
 
-footer { 
+    footer { 
     height: 20vh;
     position: relative;
     background-color: var(--color-text);
-    margin-top: 40px;
+    margin-top: 80px;
     p { 
         position: absolute;
         left: 50%;
@@ -662,5 +806,5 @@ footer {
         transform: translate(-50%,-50%);
         color: var(--bg);
         font-size: 22px;
-    }
-}
+    } 
+} 

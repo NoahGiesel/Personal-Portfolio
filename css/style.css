@@ -117,6 +117,12 @@ html.transition *:after {
   /* ---- stats.js ---- */
 }
 
+.landing__section .img__landing {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
 .landing__section #particles-js {
   position: absolute;
   width: 100%;
@@ -124,12 +130,10 @@ html.transition *:after {
 }
 
 .landing__section .count-particles {
-  background: #000022;
   position: absolute;
   top: 48px;
   left: 0;
   width: 80px;
-  color: #13E8E9;
   font-size: .8em;
   text-align: left;
   text-indent: 4px;
@@ -644,6 +648,7 @@ html.transition *:after {
 
 .project__section .project__container .text__site p {
   margin: 20px 0;
+  line-height: 35px;
 }
 
 .project__section .project__container .text__site .button__row {
@@ -728,11 +733,144 @@ html.transition *:after {
   }
 }
 
+.contact__section .contact_ul {
+  width: 40%;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact__section .contact_ul a {
+  text-decoration: none;
+}
+
+.contact__section .contact_ul #hexagon {
+  width: 100px;
+  height: 60px;
+  background: var(--color-text);
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__section .contact_ul #hexagon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: var(--bg-panel);
+}
+
+.contact__section .contact_ul #hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid var(--color-text);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__section .contact_ul #hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid var(--color-text);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__section .contact_ul .linkedin:hover {
+  background: #04d9ff !important;
+}
+
+.contact__section .contact_ul .linkedin:hover:after {
+  border-top: 25px solid #04d9ff !important;
+}
+
+.contact__section .contact_ul .linkedin:hover:before {
+  border-bottom: 25px solid #04d9ff !important;
+}
+
+.contact__section .contact_ul .gmail:hover {
+  background: #ff0404 !important;
+}
+
+.contact__section .contact_ul .gmail:hover:after {
+  border-top: 25px solid #ff0404 !important;
+}
+
+.contact__section .contact_ul .gmail:hover:before {
+  border-bottom: 25px solid #ff0404 !important;
+}
+
+.contact__section .contact_ul .github:hover {
+  background: black !important;
+}
+
+.contact__section .contact_ul .github:hover:after {
+  border-top: 25px solid black !important;
+}
+
+.contact__section .contact_ul .github:hover:before {
+  border-bottom: 25px solid black !important;
+}
+
+.contact__section .contact_ul .instagram:hover {
+  background: #ff20ec !important;
+}
+
+.contact__section .contact_ul .instagram:hover:after {
+  border-top: 25px solid #ff20ec !important;
+}
+
+.contact__section .contact_ul .instagram:hover:before {
+  border-bottom: 25px solid #ff20ec !important;
+}
+
+.contact__section .contact_ul .youtube:hover {
+  background: #ff0404 !important;
+}
+
+.contact__section .contact_ul .youtube:hover:after {
+  border-top: 25px solid #ff0404 !important;
+}
+
+.contact__section .contact_ul .youtube:hover:before {
+  border-bottom: 25px solid #ff0404 !important;
+}
+
+.contact__section .contact_ul .twitter:hover {
+  background: #04d9ff !important;
+}
+
+.contact__section .contact_ul .twitter:hover:after {
+  border-top: 25px solid #04d9ff !important;
+}
+
+.contact__section .contact_ul .twitter:hover:before {
+  border-bottom: 25px solid #04d9ff !important;
+}
+
 footer {
   height: 20vh;
   position: relative;
   background-color: var(--color-text);
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 footer p {
