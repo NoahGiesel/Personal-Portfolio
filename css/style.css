@@ -31,6 +31,7 @@ html {
   --buttons: #ff1f3d;
   --navLinks: #fffbfb;
   --spans: #333333;
+  --navText: #ff1f3d;
   --navBar: rgba(53, 53, 53, 0.89);
 }
 
@@ -42,6 +43,7 @@ html[data-theme='dark'] {
   --color-red: #ff1f3d;
   --navLinks: #ff1f3d;
   --buttons: #ff1f3d;
+  --navText: #fffbfb;
   --spans: #ff1f3d;
 }
 
@@ -161,8 +163,7 @@ nav {
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
-  color: #f7f7f7;
-  background-color: #ff1f3d;
+  color: var(--navText);
 }
 
 .nav-links {
@@ -196,8 +197,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #f7f7f7;
-  background-color: #ff1f3d;
+  color: var(--navText);
 }
 
 .burger div {
