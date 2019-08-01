@@ -392,21 +392,24 @@ nav {
 
     .text__section {  
         position: absolute ;             
-        left: 10%;
+        left: 50%;
         top: 50%; 
+        transform: translate(-50%,-50%);
         z-index: 10;
-
+        text-align: center;
 
         @media screen and ( min-width:768px ) { 
             transform: scale(1.4);
-            left: 10%;
+            left: 50%;
             top: 50%; 
+            transform: translate(-50%,-50%);
         }
 
         @media screen and ( min-width:1024px ) { 
             transform: scale(1.5);
-            left: 10%;
-            top: 50%; 
+       left: 50%;
+        top: 50%; 
+        transform: translate(-50%,-50%);
         }
 
         h2 {
@@ -472,24 +475,7 @@ nav {
          }
          
 
-        button { 
-            padding: 7px 25px ; 
-            background-color: var(--buttons);
-            border-radius: 5px; 
-            color: #fff;
-            margin: 40px  20px;  
-            border: 2px solid rgba(0, 0, 0, 0.0);
-            transition: 200ms;
-
-            &:hover {  
-                background: none;
-                -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.767);
-                -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.795);
-                transition: all 0.2s ease 0s;
-                color :var(--buttons);
-                border: 2px solid rgba(238, 33, 33, 0.644);;
-            }
-        }    
+             
     } 
      
 }
@@ -520,7 +506,7 @@ nav {
 }
 
 .aboutMe__section { 
-    width: 90%;
+    width: 70%;
     padding: 5px;
     text-align: center; 
     letter-spacing: 1px;
@@ -528,6 +514,10 @@ nav {
 
     @media screen and ( min-width: 1024px ) { 
         margin: 30px auto;
+
+    }
+    @media screen and ( max-width: 768px ) { 
+        width: 90%;
 
     }
 
@@ -538,6 +528,7 @@ nav {
 
         @media screen and ( min-width:768px ) { 
             font-size: 20px;
+            
         }
         @media screen and ( min-width:1024px ) { 
             font-size: 20px;
@@ -718,7 +709,7 @@ nav {
 .project__section  {
     width: 100%;
     margin: 0 ;
-    padding: 10px 5px; 
+    padding: 0px 5px; 
 
     @media screen and ( min-width: 1024px ) { 
         padding: 0  15px; 
@@ -800,7 +791,7 @@ nav {
             ul   { 
                 display: flex;
                 justify-content: space-around;
-                margin: 30px 0;
+                padding: 20px 0;
 
                 @media screen and ( min-width: 1024px ) { 
                     margin:   0;
@@ -810,6 +801,7 @@ nav {
                 li {
                     list-style-type: circle;
                     text-transform: uppercase;
+                    color : var(--color-text);
                 }
                  
             }
@@ -866,8 +858,17 @@ nav {
         margin: 80px auto;
         display: flex;
         justify-content: space-around;
+
+         
+
+
         a { 
             text-decoration: none;
+
+            @media screen and ( max-width:768px ) { 
+                margin: 0 10px;
+            }
+
         } 
         #hexagon {
             width: 100px;

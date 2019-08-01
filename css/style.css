@@ -382,17 +382,22 @@ nav {
 
 .landing__section .text__section {
   position: absolute;
-  left: 10%;
+  left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .landing__section .text__section {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
-    left: 10%;
+    left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -400,8 +405,10 @@ nav {
   .landing__section .text__section {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
-    left: 10%;
+    left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -515,27 +522,6 @@ nav {
   }
 }
 
-.landing__section .text__section button {
-  padding: 7px 25px;
-  background-color: var(--buttons);
-  border-radius: 5px;
-  color: #fff;
-  margin: 40px  20px;
-  border: 2px solid rgba(0, 0, 0, 0);
-  -webkit-transition: 200ms;
-  transition: 200ms;
-}
-
-.landing__section .text__section button:hover {
-  background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.767);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.795);
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
-  color: var(--buttons);
-  border: 2px solid rgba(238, 33, 33, 0.644);
-}
-
 .aboutMe__divider {
   width: 100%;
   margin: 10px 0;
@@ -571,7 +557,7 @@ nav {
 }
 
 .aboutMe__section {
-  width: 90%;
+  width: 70%;
   padding: 5px;
   text-align: center;
   letter-spacing: 1px;
@@ -581,6 +567,12 @@ nav {
 @media screen and (min-width: 1024px) {
   .aboutMe__section {
     margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe__section {
+    width: 90%;
   }
 }
 
@@ -788,7 +780,7 @@ nav {
 .project__section {
   width: 100%;
   margin: 0;
-  padding: 10px 5px;
+  padding: 0px 5px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -893,7 +885,7 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 30px 0;
+  padding: 20px 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -908,6 +900,7 @@ nav {
 .project__section .project__container .text__site ul li {
   list-style-type: circle;
   text-transform: uppercase;
+  color: var(--color-text);
 }
 
 .contact__divider {
@@ -962,6 +955,12 @@ nav {
 
 .contact__section .contact_ul a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__section .contact_ul a {
+    margin: 0 10px;
+  }
 }
 
 .contact__section .contact_ul #hexagon {
