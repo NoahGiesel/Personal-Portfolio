@@ -750,6 +750,11 @@ nav {
                 background-size: cover;
                 width: 100%;
             } 
+            .thirdimage {
+                background-image: url("../img/explore_italy_bottom.png");
+                background-size: cover;
+                width: 100%;
+            } 
             .img__bottom {
                 width: 100%;
                 transform-style: preserve-3d;
@@ -782,7 +787,7 @@ nav {
                     padding: 8px 15px;
                     background-color: var(--color-text);
                     color :  var(--bg-panel);
-                    border-radius: 10px;
+                    border-radius: 5px;
                     max-height: 40px;
                 }
             }
