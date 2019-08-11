@@ -17,8 +17,7 @@ function changeParticlesColor() {
      fetch( "./particles.json") 
     .then(res => res.json())       
     .then(function(data) {      
-        let s = JSON.stringify(data.particles.color.value = "red");
-        console.log(s)
+        let s = JSON.stringify(data.particles.color.value = "red"); 
     }); 
        
 
@@ -48,7 +47,7 @@ let trans = () => {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition')
-    }, 500)
+    }, 0)
 }
 
   
@@ -66,7 +65,7 @@ const navSlide  = () => {
  
     burger.addEventListener('click',() => {
         nav.classList.toggle('nav-active'); 
-        body.classList.toggle("fixedPosition");   
+        body.classList.toggle("fixedPosition");  
         aperto === false ? aperto = true :  aperto = false;
          navLinks.forEach(link =>{
             if(link.style.animation){
@@ -95,10 +94,10 @@ function myFunction() {
         if(aperto){
             body.classList.toggle("fixedPosition");   
             nav.classList.toggle('nav-active');   
-            burger.classList.toggle('toggle');
+            burger.classList.toggle('toggle'); 
             navLinks.forEach(link =>{
                 if(link.style.animation){
-     
+                    
                     link.style.animation = '';
                     label.style.animation = '';
                 }else {
