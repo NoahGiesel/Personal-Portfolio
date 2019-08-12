@@ -105,8 +105,8 @@ function myFunction() {
                     label.style.animation = 'navLinkFade 0.5s ease forwards  .65s'; 
                }
              });
-         } 
-         aperto === false ? aperto = true :  aperto = false;
+         }
+          aperto === false ? aperto = true :  aperto = false;
         }
   }
  
