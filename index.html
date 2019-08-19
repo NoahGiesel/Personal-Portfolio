@@ -17,31 +17,29 @@
  
   
     <!--navigation--> 
-    <nav data-sal="slide-down"
-    data-sal-duration="1200" data-sal-easing="ease-in-out">
-        <div class="logo">
-            <h4>
-                <a href="#home"> Noah Giesel</a> 
-            </h4>
-        </div>
-        <ul class="nav-links" onclick="myFunction()"> 
-            <li class="nav-links-li"><a href="#aboutAnchor">About</a></li>
-            <li class="nav-links-li"><a href="#projectAnchor">Projects</a></li>
-            <li class="nav-links-li"><a href="#contactAnchor">Contact</a></li>
-            <li class="nav-links-li"class="navigationLIlaberl">            
+    <header id="header">
+        <h2 class="logo"><a href="#">Giesel Noah</a></h2>
+        <div class="container">
+          <a id="toggle">
+            <span class="l1"></span>
+            <span class="l2"></span>
+            <span class="l3"></span>
+          </a>
+          <nav id="nav">
+            <ul>
+              <li><a href="#">About</a></li> 
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="navigationLIlaberl">            
                 <input type="checkbox" id="switch" name="theme" /><label class="sitchTheme"for="switch">Toggle</label>
             </li>
-         </li>
-             
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
 
 
+
+          </ul>
+        </nav>
+       </div>
+      </header>
     <!-- landing page -->
     <div class="landing__section" id="home">
 
@@ -76,7 +74,7 @@
     <div class="aboutMe__section">
         <p>
             Hey. I'm <span>Noah</span>, a 22 years old  <span>self-taught</span> and <span>highly motivated </span>Front-End developer!
-            I'm from Germany and currently based in Italy! 
+            I'm from Germany and currently based in Munich! 
         </p>
         <p>
             After i graduated High School in mid 2016, i decided to study <span>IT</span> at Univeristy of Florence.
