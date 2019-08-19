@@ -692,9 +692,16 @@ nav {
   border-radius: 8px;
 }
 
-.currentStack__section .stack__info .stack {
+.currentStack__section .stack__info span {
+  color: var(--color-red);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.currentStack__section .stack__info .stack_learn {
   font-size: 15px;
-  width: 60px;
+  width: 65px;
   margin-top: -24px;
   margin-left: 5px;
   background: var(--color-text);
@@ -1128,5 +1135,12 @@ footer p {
           transform: translate(-50%, -50%);
   color: var(--bg);
   font-size: 22px;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -10vh;
+  visibility: hidden;
 }
 /*# sourceMappingURL=style.css.map */

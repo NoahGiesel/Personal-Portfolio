@@ -627,15 +627,20 @@ nav {
         border: 1px solid var(--bg-panel);
         border-radius: 8px;
         
-        .stack {
+        span { 
+            color: var(--color-red);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .stack_learn {
             font-size: 15px ; 
-            width: 60px;
+            width: 65px;
             margin-top:-24px;
             margin-left:5px;
             background:var(--color-text);
-            color: var(--bg-panel);
+            color: var(--bg-panel); 
         }
-        
         .development {
             font-size: 15px ; 
             width: 115px;
@@ -1046,3 +1051,12 @@ nav {
         font-size: 22px;
     } 
 } 
+
+// page offset for header 
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10vh;
+    visibility: hidden;
+}
