@@ -896,6 +896,7 @@ html.transition *:after {
   color: var(--bg-panel);
   border-radius: 5px;
   max-height: 40px;
+  margin: 0 20px;
 }
 
 .project__section .project__container .text__site ul {
