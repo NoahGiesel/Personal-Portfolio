@@ -71,6 +71,23 @@ html, body {
     scroll-behavior: smooth; 
 }
  
+ // mixin for buttons code preview
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+ background: $bcolor;
+ -webkit-mask: url($url);
+ mask: url($url);
+ -webkit-mask-size: $x1 $y1;
+ mask-size: $x1 $y1;
+ border: $bor;
+ color: $col;
+}
+
+
 
 input[type=checkbox]{
 	height: 0;
@@ -799,19 +816,114 @@ html.transition *:after {
 
             .button__row { 
                 display: flex ;
-                justify-content: space-around;
-                width: 50%;
+                justify-content: space-around; 
                 margin:  0 auto;
+  
+ 
 
-                a {
-                    text-decoration: none;
-                    padding: 8px 15px;
-                    background-color: var(--color-text);
-                    color :  var(--bg-panel);
-                    border-radius: 5px;
-                    max-height: 40px;
-                    margin: 0 20px ; 
-                }
+                    .button-container-3 {
+                        position: relative;
+                        width: 100px;
+                        height: 50px;
+                        margin: 0 20px; 
+                        overflow: hidden;
+                        border: 1px solid #000;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 300;
+                        transition: 0.5s;
+                        letter-spacing: 1px;
+                        border-radius: 8px ; 
+
+                    a {
+                        width: 101%;
+                        height: 100%;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 300;
+                        font-size: 20px;
+                        letter-spacing: 1px;  
+                        text-align: center;
+
+                        @include button(#000,
+                            "https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true",
+                            7100%,
+                            100%,
+                            none,
+                            #fff);
+                            cursor: pointer;
+                            -webkit-animation: ani2 0.7s steps(70) forwards;
+                            animation: ani2 0.7s steps(70) forwards;
+
+                            &:hover {
+                            -webkit-animation: ani 0.7s steps(70) forwards;
+                            animation: ani 0.7s steps(70) forwards;
+                        }
+                    }
+                    }
+
+                    .mas {
+                        position: absolute;
+                        color: #000;
+                        text-align: center;
+                        width: 101%;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 300;
+                        position: absolute;
+                        font-size: 20px;
+                        margin-top: 8px;
+                        overflow: hidden; 
+                    }
+
+                    @-webkit-keyframes ani {
+                    from {
+                    -webkit-mask-position: 0 0;
+                    mask-position: 0 0;
+                    }
+
+                    to {
+                    -webkit-mask-position: 100% 0;
+                    mask-position: 100% 0;
+                    }
+                    }
+
+                    @keyframes ani {
+                    from {
+                    -webkit-mask-position: 0 0;
+                    mask-position: 0 0;
+                    }
+
+                    to {
+                    -webkit-mask-position: 100% 0;
+                    mask-position: 100% 0;
+                    }
+                    }
+
+                    @-webkit-keyframes ani2 {
+                    from {
+                    -webkit-mask-position: 100% 0;
+                    mask-position: 100% 0;
+                    }
+
+                    to {
+                    -webkit-mask-position: 0 0;
+                    mask-position: 0 0;
+                    }
+                    }
+
+                    @keyframes ani2 {
+                    from {
+                    -webkit-mask-position: 100% 0;
+                    mask-position: 100% 0;
+                    }
+
+                    to {
+                    -webkit-mask-position: 0 0;
+                    mask-position: 0 0;
+                    }
+                    }
+
+                    a{
+                        color:#00ff95;
+                    }
             }
 
 

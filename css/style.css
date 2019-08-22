@@ -886,18 +886,108 @@ html.transition *:after {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 50%;
   margin: 0 auto;
 }
 
-.project__section .project__container .text__site .button__row a {
-  text-decoration: none;
-  padding: 8px 15px;
-  background-color: var(--color-text);
-  color: var(--bg-panel);
-  border-radius: 5px;
-  max-height: 40px;
+.project__section .project__container .text__site .button__row .button-container-3 {
+  position: relative;
+  width: 100px;
+  height: 50px;
   margin: 0 20px;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+.project__section .project__container .text__site .button__row .button-container-3 a {
+  width: 101%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  background: #000;
+  -webkit-mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
+  mask: url("https://github.com/robin-dela/css-mask-animation/blob/master/img/nature-sprite-2.png?raw=true");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+
+.project__section .project__container .text__site .button__row .button-container-3 a:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+}
+
+.project__section .project__container .text__site .button__row .mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 101%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 20px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+.project__section .project__container .text__site .button__row a {
+  color: #00ff95;
 }
 
 .project__section .project__container .text__site ul {
