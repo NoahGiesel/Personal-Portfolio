@@ -221,6 +221,12 @@ html.transition *:after {
   color: var(--navText);
 }
 
+@media (max-width: 767px) {
+  #header .logo a {
+    left: 10px;
+  }
+}
+
 #nav {
   position: absolute;
   right: 8%;
@@ -292,8 +298,8 @@ html.transition *:after {
     top: 9px;
     left: 50%;
     width: 17px;
-    height: 1px;
-    background: #888;
+    height: 2px;
+    background: #fff;
     -webkit-transition: 350ms;
     transition: 350ms;
   }
