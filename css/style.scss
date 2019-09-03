@@ -76,6 +76,7 @@ html, body {
  
 body {
     overflow-x: hidden;
+    max-width: 100vw;
 }
  // mixin for buttons code preview
 @mixin button($bcolor,
@@ -207,7 +208,7 @@ html.transition *:after {
     position:fixed;
     top:0;
     left:0;
-    width:100%;
+    width:100vw;
     height:50px;
     background:#323233;
     box-shadow:0 1px 3px rgba(0,0,0,0.2);
