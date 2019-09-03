@@ -55,3 +55,9 @@ let trans = () => {
 //nav
 $("#toggle").click(function(){$("body").toggleClass("open")});
 $("#nav").click(function(){$("body").removeClass("open")});
+
+
+
+  //AOS 
+
+AOS.init();

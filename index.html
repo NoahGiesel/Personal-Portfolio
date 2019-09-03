@@ -12,6 +12,18 @@
 
     <title>Noah Giesel</title>
 
+
+  
+
+    <!-- animate css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    
+      <!-- AOS scroll animation -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 
@@ -38,7 +50,7 @@
 
     <header id="header">
 
-        <h2 class="logo"><a href="https://www.noahgiesel.com/">Giesel Noah</a></h2>
+        <h2 class="logo animated bounceInDown "><a href="https://www.noahgiesel.com/">Noah Giesel</a></h2>
 
         <div class="container">
 
@@ -56,13 +68,13 @@
 
             <ul>
 
-              <li><a href="#aboutAnchor">About</a></li> 
+              <li class=" animated fadeInDown "><a href="#aboutAnchor">About</a></li> 
 
-              <li><a href="#projectAnchor">Projects</a></li>
+              <li class=" animated fadeInDown "><a href="#projectAnchor">Projects</a></li>
 
-              <li><a href="#contactAnchor">Contact</a></li>
+              <li class=" animated fadeInDown "><a href="#contactAnchor">Contact</a></li>
 
-              <li class="navigationLIlaberl">            
+              <li class="navigationLIlaberl  animated fadeInUp delay-1s">            
 
                 <input type="checkbox" id="switch" name="theme" /><label class="sitchTheme"for="switch">Toggle</label>
 
@@ -82,7 +94,7 @@
 
 
 
-        <div class="img__landing" >  
+        <div class="img__landing " >  
 
                 <div id="particles-js"></div> 
 
@@ -90,11 +102,11 @@
 
 
 
-        <div class="text__section"> 
+        <div class="text__section  "> 
 
-            <h2>Hey. I'm <span>Noah</span>,</h2>
+            <h2 class="animated bounceInUp">Hey. I'm <span>Noah</span>,</h2>
 
-            <div class="all-text"> 
+            <div class="all-text animated bounceInUp"> 
 
             <p>a</p>
 
@@ -128,7 +140,7 @@
 
 
 
-    <div class="aboutMe__divider divider" id="aboutme">
+    <div class="aboutMe__divider divider" id="aboutme" data-aos="fade-up">
 
         <h2>About Me </h2> 
 
@@ -138,9 +150,9 @@
 
 
 
-    <div class="aboutMe__section">
+    <div class="aboutMe__section" >
 
-        <p>
+        <p  data-aos="fade-right">
 
             Hey. I'm <span>Noah</span>, a 22 years old  <span>self-taught</span> and <span>highly motivated </span>Front-End developer!
 
@@ -148,7 +160,7 @@
 
         </p>
 
-        <p>
+        <p  data-aos="fade-left">
 
             After i graduated High School in mid 2016, i decided to study <span>IT</span> at Univeristy of Florence.
 
@@ -160,7 +172,7 @@
 
         </p>
 
-        <p>
+        <p data-aos="fade-up">
 
             In April 2018 i decided to learn Web Development, in particular  <span>Front-End</span>. I
 
@@ -170,7 +182,7 @@
 
         </p>
 
-        <p>
+        <p  data-aos="fade-up" >
 
             I learned really quick thanks to plenty of YouTube videos and Udemy courses such as <span><a href="https://www.udemy.com/react-redux/">"Modern React with Redux [2019 Update]
 
@@ -186,9 +198,9 @@
 
         </p>
 
-        <p class="cv_text">Below you can find my Curriculum Vitae:</p>
+        <p class="cv_text"  data-aos="fade-up" >Below you can find my Curriculum Vitae:</p>
 
-        <a href="https://www.noahgiesel.com/" class="curriculumV hvr-float-shadow">Curriculum vitae </a>
+        <a href="https://www.noahgiesel.com/" class="curriculumV hvr-float-shadow"  data-aos="fade-up">Curriculum vitae </a>
 
   
 
@@ -202,9 +214,9 @@
 
 
 
-    <div class="projects__divider divider" id="projects">
+    <div class="projects__divider divider" id="projects" >
 
-        <h2>Latest Projects</h2>  
+        <h2   data-aos="fade-up">Latest Projects</h2>  
 
     </div>
 
@@ -222,9 +234,9 @@
 
     <div class="project__container">
 
-        <div class="image__site">
+        <div class="image__site"   data-aos="fade-right">
 
-            <div class="img__top firstimage" data-tilt alt="">
+            <div class="img__top firstimage" data-tilt alt="" >
 
                 <img src="./img/nasa_api_top.png" class="img__bottom"alt="">
 
@@ -232,7 +244,7 @@
 
         </div>
 
-        <div class="text__site"> 
+        <div class="text__site"  data-aos="fade-left"> 
 
             <p>
 
@@ -240,7 +252,7 @@
 
             </p>
 
-            <div class="button__row">
+            <div class="button__row"  data-aos="fade-up">
 
                 <a href="https://www.noahgiesel.com/" class="code_preview hvr-float-shadow">code </a>
 
@@ -248,7 +260,7 @@
 
              </div> 
 
-            <ul>
+            <ul  data-aos="fade-up">
 
                 <li>Bootstrap</li>
 
@@ -274,19 +286,19 @@
 
 
 
-    <div class="project__container">
+    <div class="project__container" >
 
-            <div class="image__site">
+            <div class="image__site"  data-aos="fade-left">
 
-                <div class="img__top secondimage" data-tilt  alt="">
+                <div class="img__top secondimage" data-tilt  alt="" >
 
-                    <img src="./img/react_weather_top.png" class="img__bottom"alt="">
+                    <img src="./img/react_weather_top.png" class="img__bottom"alt="" >
 
                 </div>        
 
             </div>
 
-        <div class="text__site">  
+        <div class="text__site"  data-aos="fade-right">  
 
             </h2>
 
@@ -296,7 +308,7 @@
 
             </p>
 
-            <div class="button__row">
+            <div class="button__row"  data-aos="fade-up">
 
                 <a href="https://www.noahgiesel.com/" class="code_preview hvr-float-shadow">code </a>
 
@@ -306,7 +318,7 @@
 
              </div> 
 
-            <ul>
+            <ul  data-aos="fade-up">
 
                 <li>Bootstrap</li>
 
@@ -334,7 +346,7 @@
 
     <div class="project__container">
 
-            <div class="image__site">
+            <div class="image__site"  data-aos="fade-right">
 
                     <div class="img__top thirdimage" data-tilt alt="">
 
@@ -344,7 +356,7 @@
 
                 </div>
 
-        <div class="text__site"> 
+        <div class="text__site"  data-aos="fade-left"> 
 
             <p>
 
@@ -352,7 +364,7 @@
 
             </p>
 
-            <div class="button__row">
+            <div class="button__row"  data-aos="fade-up">
 
                 <a href="https://www.noahgiesel.com/" class="code_preview hvr-float-shadow">code </a>
 
@@ -362,7 +374,7 @@
 
              </div> 
 
-            <ul>
+            <ul  data-aos="fade-up">
 
                 <li>Bootstrap</li>
 
@@ -390,7 +402,7 @@
 
     <div class="project__container">
 
-            <div class="image__site">
+            <div class="image__site"  data-aos="fade-left">
 
                     <div class="img__top firstimage" data-tilt alt="">
 
@@ -400,7 +412,7 @@
 
                 </div>
 
-        <div class="text__site"> 
+        <div class="text__site"  data-aos="fade-right"> 
 
             <p>
 
@@ -408,7 +420,7 @@
 
             </p>
 
-            <div class="button__row">
+            <div class="button__row"  data-aos="fade-up">
 
                 <a href="https://www.noahgiesel.com/" class="code_preview hvr-float-shadow">code </a>
 
@@ -418,7 +430,7 @@
 
              </div> 
 
-            <ul>
+            <ul  data-aos="fade-up">
 
                 <li>Bootstrap</li>
 
@@ -446,7 +458,7 @@
 
     <div class="project__container">
 
-            <div class="image__site">
+            <div class="image__site"  data-aos="fade-right">
 
                     <div class="img__top firstimage" data-tilt alt="">
 
@@ -456,7 +468,7 @@
 
                 </div>
 
-        <div class="text__site"> 
+        <div class="text__site"  data-aos="fade-left"> 
 
             <p>
 
@@ -464,7 +476,7 @@
 
             </p>
 
-            <div class="button__row">
+            <div class="button__row" data-aos="fade-up">
 
                 <a href="https://www.noahgiesel.com/" class="code_preview hvr-float-shadow">code </a>
 
@@ -474,7 +486,7 @@
 
              </div> 
 
-            <ul>
+            <ul data-aos="fade-up">
 
                 <li>Bootstrap</li>
 
@@ -506,7 +518,7 @@
 
     <!-- Current stack of technologie -->
 
-    <div class="currentStack__section">
+    <div class="currentStack__section"  data-aos="fade-right">
 
             <div class="stack__info">
 
@@ -556,7 +568,7 @@
 
             </div>
 
-            <div class="stack__info">
+            <div class="stack__info"  data-aos="fade-up">
 
                     <h1 class="development">Development</h1>
 
@@ -590,7 +602,7 @@
 
             </div>
 
-            <div class="stack__info thirdStack">
+            <div class="stack__info thirdStack"  data-aos="fade-left">
 
                 <h1 class="future">Future</h1>
 
@@ -638,7 +650,7 @@
 
 
 
-      <div class="contact__divider divider" id="contact">
+      <div class="contact__divider divider" id="contact"  data-aos="fade-up">
 
             <h2>Get in Touch!</h2>  
 
@@ -650,13 +662,13 @@
 
         <div class="contact__section">
 
-            <p>
+            <p  data-aos="fade-up">
 
                 If you have any further questions or any feedback please feel free to contact me!
 
             </p>
 
-            <div class="contact_ul">
+            <div class="contact_ul"  data-aos="fade-right">
 
                     <a href=""><div  data-tippy="LinkedIn"data-tippy-arrow="true"   class="linkedin" id="hexagon"><i class="fab fa-linkedin-in fa-2x"></i></div></a>
 
@@ -666,9 +678,9 @@
 
             </div>
 
-            <p>Or follow any of my socials to get latest news about current works and goals : </p>
+            <p  data-aos="fade-up">Or follow any of my socials to get latest news about current works and goals : </p>
 
-            <div class="contact_ul">
+            <div class="contact_ul"  data-aos="fade-left">
 
                     <a href=""  ><div data-tippy="Instagram" data-tippy-arrow="true" class="instagram" id="hexagon"><i class="fab fa-instagram fa-2x"></i></div></a>
 
@@ -688,14 +700,13 @@
 
         
 
-        <footer>
+        <footer  data-aos="fade-left">
 
-            <p>Noah Giesel &copy;</p>
+            <p > Noah Giesel &copy;</p>
 
         </footer>
 
-
-
+ 
         <!-- hover label -->
 
         <script src="https://unpkg.com/popper.js@1"></script>
@@ -714,9 +725,15 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-     <script src="app.js"></script>    
+
+    <!-- aos -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     
+     <script src="app.js"></script>    
+
+ 
 
 </body>
 
