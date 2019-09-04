@@ -42,7 +42,7 @@ html {
   --spans: #333333;
   --navText: #ff1f3d;
   --navBar: rgba(53, 53, 53, 0.89);
-  --landigBg :  linear-gradient(to bottom, #323233 0%,#323233  50%,#323233  50%,white 50%,white 100%); 
+  --landigBg :  linear-gradient(to bottom, #323233 0%,#323233  50%,#323233  50%,rgb(247, 245, 242) 50%,rgb(247, 245, 242) 100%); 
 }
 
 html[data-theme="dark"] {
@@ -57,7 +57,7 @@ html[data-theme="dark"] {
   --buttons: #ff1f3d;
   --navText: #fffbfb;
   --spans: #ff1f3d;
-  --landigBg :  linear-gradient(to bottom, white 0%,white 50%,white 50%,#323233  50%,#323233  100%); 
+  --landigBg :  linear-gradient(to bottom,rgb(247, 245, 242) 0%,rgb(247, 245, 242) 50%,rgb(247, 245, 242) 50%,#323233  50%,#323233  100%); 
 
 }
 
