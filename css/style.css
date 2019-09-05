@@ -5,6 +5,24 @@
   padding: 0;
 }
 
+::-moz-selection {
+  background: var(--color-text);
+  /* WebKit/Blink Browsers */
+  color: var(--bg-panel);
+}
+
+::selection {
+  background: var(--color-text);
+  /* WebKit/Blink Browsers */
+  color: var(--bg-panel);
+}
+
+::-moz-selection {
+  background: var(--color-text);
+  /* Gecko Browsers */
+  color: var(--bg-panel);
+}
+
 h2,
 p,
 h6 {
@@ -924,6 +942,12 @@ html.transition *:after {
 
 .project__section .project__container .image__site .thirdimage {
   background-image: url("../img/explore_italy_bottom.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.project__section .project__container .image__site .fourthIMG {
+  background-image: url("../img/ecommerce_bottom.png");
   background-size: cover;
   width: 100%;
 }
