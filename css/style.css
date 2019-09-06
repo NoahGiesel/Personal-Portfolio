@@ -481,6 +481,12 @@ html.transition *:after {
   color: var(--bg);
 }
 
+@media screen and (max-width: 1200px) {
+  .text__section h2 {
+    margin-bottom: 30px;
+  }
+}
+
 .text__section span {
   color: var(--color-red);
   font-weight: bold;
