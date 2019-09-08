@@ -223,6 +223,18 @@ html.transition *:after {
   text-shadow: 1px 1px #0d0d0d, -1px -1px #323233;
 }
 
+@media (min-width: 2000px) {
+  #header {
+    height: 80px;
+  }
+}
+
+@media (min-width: 3400px) {
+  #header {
+    height: 130px;
+  }
+}
+
 #header .container {
   height: 100%;
 }
@@ -250,6 +262,20 @@ html.transition *:after {
   color: var(--navText);
 }
 
+@media (min-width: 2000px) {
+  #header .logo a {
+    top: 30px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 3400px) {
+  #header .logo a {
+    top: 60px;
+    font-size: 60px;
+  }
+}
+
 @media (max-width: 767px) {
   #header .logo a {
     left: 10px;
@@ -262,6 +288,18 @@ html.transition *:after {
   top: 10px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+}
+
+@media (min-width: 2000px) {
+  #nav {
+    top: 20px;
+  }
+}
+
+@media (min-width: 3400px) {
+  #nav {
+    top: 40px;
+  }
 }
 
 #nav ul {
@@ -288,6 +326,18 @@ html.transition *:after {
   transition: all 0.3s ease-in-out;
 }
 
+@media (min-width: 2000px) {
+  #nav a {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 3400px) {
+  #nav a {
+    font-size: 35px;
+  }
+}
+
 #nav a:hover {
   color: var(--navText);
 }
@@ -295,6 +345,21 @@ html.transition *:after {
 #nav .sitchTheme {
   margin: 0;
   top: 5px;
+}
+
+@media (min-width: 2000px) {
+  #nav .sitchTheme {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+}
+
+@media (min-width: 3400px) {
+  #nav .sitchTheme {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -459,6 +524,20 @@ html.transition *:after {
   text-align: center;
 }
 
+@media (min-width: 2000px) {
+  .text__section {
+    -webkit-transform: translate(-50%, -50%) scale(2.5);
+            transform: translate(-50%, -50%) scale(2.5);
+  }
+}
+
+@media (min-width: 3400px) {
+  .text__section {
+    -webkit-transform: translate(-50%, -50%) scale(4) !important;
+            transform: translate(-50%, -50%) scale(4) !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .text__section {
     left: 50%;
@@ -483,7 +562,7 @@ html.transition *:after {
 
 @media screen and (max-width: 1200px) {
   .text__section h2 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -516,6 +595,18 @@ html.transition *:after {
   height: 28px;
   padding: 0 10px;
   overflow: hidden;
+}
+
+@media (min-width: 2000px) {
+  .text__section .slider {
+    height: 32px;
+  }
+}
+
+@media (min-width: 3400px) {
+  .text__section .slider {
+    height: 35px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -602,6 +693,18 @@ html.transition *:after {
   text-align: center;
 }
 
+@media screen and (min-width: 2000px) {
+  .aboutMe__divider h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .aboutMe__divider h2 {
+    font-size: 145px !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .aboutMe__divider h2 {
     font-size: 50px;
@@ -616,6 +719,18 @@ html.transition *:after {
 
 .aboutMe__divider p {
   font-weight: bold;
+}
+
+@media screen and (min-width: 2000px) {
+  .aboutMe__divider p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .aboutMe__divider p {
+    font-size: 55px !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -646,7 +761,7 @@ html.transition *:after {
 
 @media screen and (max-width: 768px) {
   .aboutMe__section {
-    width: 90%;
+    width: 80% !important;
   }
 }
 
@@ -654,6 +769,19 @@ html.transition *:after {
   line-height: 35px;
   font-size: 17px;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 2000px) {
+  .aboutMe__section p {
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .aboutMe__section p {
+    font-size: 45px !important;
+    line-height: 100px !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -675,6 +803,18 @@ html.transition *:after {
   letter-spacing: 1px;
 }
 
+@media screen and (min-width: 2000px) {
+  .aboutMe__section span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .aboutMe__section span {
+    font-size: 45px !important;
+  }
+}
+
 .aboutMe__section a {
   text-decoration: none;
   color: var(--spans);
@@ -684,6 +824,18 @@ html.transition *:after {
 
 .aboutMe__section a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 2000px) {
+  .aboutMe__section a {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .aboutMe__section a {
+    font-size: 45px !important;
+  }
 }
 
 .aboutMe__section .cv_text {
@@ -705,6 +857,19 @@ html.transition *:after {
   background: var(--color-text);
   color: var(--buttons_txt);
   text-decoration: none;
+}
+
+@media screen and (min-width: 2000px) {
+  .aboutMe__section .curriculumV {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .aboutMe__section .curriculumV {
+    padding: 15px 22px;
+  }
 }
 
 .aboutMe__section .curriculumV:hover {
@@ -786,6 +951,20 @@ html.transition *:after {
   color: var(--bg-panel);
 }
 
+@media screen and (min-width: 2000px) {
+  .currentStack__section .stack__info .stack_learn {
+    font-size: 18px;
+    width: 75px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .currentStack__section .stack__info .stack_learn {
+    font-size: 40px;
+    width: 75px;
+  }
+}
+
 .currentStack__section .stack__info .development {
   font-size: 15px;
   width: 115px;
@@ -793,6 +972,20 @@ html.transition *:after {
   margin-left: 5px;
   background: var(--color-text);
   color: var(--bg-panel);
+}
+
+@media screen and (min-width: 2000px) {
+  .currentStack__section .stack__info .development {
+    font-size: 18px;
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .currentStack__section .stack__info .development {
+    font-size: 35px;
+    width: 130px;
+  }
 }
 
 .currentStack__section .stack__info .future {
@@ -804,9 +997,36 @@ html.transition *:after {
   color: var(--bg-panel);
 }
 
+@media screen and (min-width: 2000px) {
+  .currentStack__section .stack__info .future {
+    font-size: 18px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .currentStack__section .stack__info .future {
+    font-size: 35px;
+    width: 80px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .currentStack__section .stack__info {
     max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .currentStack__section .stack__info {
+    max-width: 550px;
+    padding: 39px 15px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .currentStack__section .stack__info {
+    max-width: 650px;
   }
 }
 
@@ -830,9 +1050,34 @@ html.transition *:after {
   line-height: 20px;
 }
 
+@media screen and (min-width: 2000px) {
+  .currentStack__section .stack__info p {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .currentStack__section .stack__info p {
+    font-size: 40px;
+    line-height: 60px !important;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .currentStack__section .stack__info p {
     line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .currentStack__section .stack__info p {
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .currentStack__section .stack__info p {
+    font-size: 45px;
   }
 }
 
@@ -849,6 +1094,18 @@ html.transition *:after {
   text-align: center;
 }
 
+@media screen and (min-width: 2000px) {
+  .projects__divider {
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .projects__divider {
+    margin: 60px 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects__divider h2 {
     font-size: 50px;
@@ -858,6 +1115,12 @@ html.transition *:after {
 @media screen and (min-width: 1024px) {
   .projects__divider h2 {
     font-size: 59px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .projects__divider h2 {
+    font-size: 150px;
   }
 }
 
@@ -916,6 +1179,12 @@ html.transition *:after {
         grid-template-columns: 50% 50%;
     width: 60%;
     margin: 100px auto;
+  }
+}
+
+@media screen and (min-width: 3400) {
+  .project__section .project__container {
+    grid-row-gap: 50px;
   }
 }
 
@@ -982,6 +1251,20 @@ html.transition *:after {
   line-height: 35px;
 }
 
+@media screen and (min-width: 2000px) {
+  .project__section .project__container .text__site p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .project__section .project__container .text__site p {
+    font-size: 50px;
+    margin: 60px 0;
+    line-height: 75px;
+  }
+}
+
 .project__section .project__container .text__site .button__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,6 +1272,18 @@ html.transition *:after {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 2000px) {
+  .project__section .project__container .text__site .button__row {
+    max-height: 50px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .project__section .project__container .text__site .button__row {
+    max-height: 90px;
+  }
 }
 
 .project__section .project__container .text__site .button__row .code_preview {
@@ -1001,6 +1296,18 @@ html.transition *:after {
   color: var(--bg-panel);
   text-decoration: none;
   margin: 0 25px;
+}
+
+@media screen and (min-width: 2000px) {
+  .project__section .project__container .text__site .button__row .code_preview {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .project__section .project__container .text__site .button__row .code_preview {
+    font-size: 50px;
+  }
 }
 
 .project__section .project__container .text__site .button__row .code_preview:hover {
@@ -1016,6 +1323,18 @@ html.transition *:after {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 20px 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .project__section .project__container .text__site ul {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .project__section .project__container .text__site ul {
+    font-size: 45px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1073,6 +1392,18 @@ html.transition *:after {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .contact__section p {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .contact__section p {
+    font-size: 50px !important;
+  }
+}
+
 .contact__section .contact_ul {
   width: 40%;
   margin: 80px auto;
@@ -1101,6 +1432,20 @@ html.transition *:after {
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 2000px) {
+  .contact__section .contact_ul #hexagon {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  .contact__section .contact_ul #hexagon {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 .contact__section .contact_ul #hexagon i {
@@ -1227,6 +1572,18 @@ footer p {
           transform: translate(-50%, -50%);
   color: var(--bg);
   font-size: 22px;
+}
+
+@media screen and (min-width: 2000px) {
+  footer p {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 3400px) {
+  footer p {
+    font-size: 50px;
+  }
 }
 
 a.anchor {
