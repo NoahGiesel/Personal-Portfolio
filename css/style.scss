@@ -1082,19 +1082,13 @@ html.transition *:after {
     }
 
     .text__site {
-      width: 100%;
-      display: grid;
-      grid-template-rows: auto 2.7rem auto;
-      grid-gap: 5px;
+      width: 100%; 
       text-align: center;
       letter-spacing: 1px;
-
-      @media screen and (min-width: 3400px){ 
-        grid-template-rows: auto auto auto;
-      
-
-  }
-
+ 
+      display: flex ; 
+      justify-content: center;
+      align-items: center;
 
 
       p {
@@ -1118,18 +1112,10 @@ html.transition *:after {
 
       .button__row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 0 auto;
 
-              
-        @media screen and (min-width: 2000px) {  
-          max-height: 50px; 
-        }
-
-        @media screen and (min-width: 3400px){ 
-          max-height: 90px
-        }
-
+         
 
 
         .code_preview {
@@ -1141,7 +1127,7 @@ html.transition *:after {
           background: var(--color-text);
           color: var(--bg-panel);
           text-decoration: none;
-          margin: 0 25px;
+          margin: 0  ;
 
                    
         @media screen and (min-width: 2000px) {  
