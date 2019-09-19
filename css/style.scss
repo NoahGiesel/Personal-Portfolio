@@ -1084,10 +1084,18 @@ html.transition *:after {
     .text__site {
       width: 100%;
       display: grid;
-      grid-template-rows: auto auto auto;
+      grid-template-rows: auto 2.7rem auto;
       grid-gap: 5px;
       text-align: center;
       letter-spacing: 1px;
+
+      @media screen and (min-width: 3400px){ 
+        grid-template-rows: auto auto auto;
+      
+
+  }
+
+
 
       p {
         margin: 20px 0;
@@ -1101,7 +1109,8 @@ html.transition *:after {
       @media screen and (min-width: 3400px){ 
             font-size: 50px;
             margin: 60px 0;
-            line-height: 75px;
+            line-height: 75px;       
+
       }
 
 

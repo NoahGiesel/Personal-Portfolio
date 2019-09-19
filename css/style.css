@@ -1239,11 +1239,18 @@ html.transition *:after {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
+  -ms-grid-rows: auto 2.7rem auto;
+      grid-template-rows: auto 2.7rem auto;
   grid-gap: 5px;
   text-align: center;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 3400px) {
+  .project__section .project__container .text__site {
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
 }
 
 .project__section .project__container .text__site p {
