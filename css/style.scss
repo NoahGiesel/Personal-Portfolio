@@ -11,21 +11,16 @@
   padding: 0;
 }
 
-
-// COLOR TEXT SELECTION 
+// COLOR TEXT SELECTION
 
 ::selection {
   background: var(--color-text); /* WebKit/Blink Browsers */
-  color : var(--bg-panel);
+  color: var(--bg-panel);
 }
 ::-moz-selection {
   background: var(--color-text); /* Gecko Browsers */
-  color : var(--bg-panel);
+  color: var(--bg-panel);
 }
-
-
-
-
 
 h2,
 p,
@@ -58,7 +53,14 @@ html {
   --spans: #333333;
   --navText: #ff1f3d;
   --navBar: rgba(53, 53, 53, 0.89);
-  --landigBg :  linear-gradient(to bottom, #333333 0%,#333333  50%,#333333  50%,rgb(247, 245, 242) 50%,rgb(247, 245, 242) 100%); 
+  --landigBg: linear-gradient(
+    to bottom,
+    #333333 0%,
+    #333333 50%,
+    #333333 50%,
+    rgb(247, 245, 242) 50%,
+    rgb(247, 245, 242) 100%
+  );
 }
 
 html[data-theme="dark"] {
@@ -67,14 +69,20 @@ html[data-theme="dark"] {
   --color-heading: #3694ff;
   --color-text: #fffbfb;
   --color-red: #ff1f3d;
-  --navLinks: #ff1f3d; 
+  --navLinks: #ff1f3d;
   --buttons_hvr: #ff1f3d;
   --buttons_txt: #434343;
   --buttons: #ff1f3d;
   --navText: #fffbfb;
   --spans: #ff1f3d;
-  --landigBg :  linear-gradient(to bottom,rgb(247, 245, 242) 0%,rgb(247, 245, 242) 50%,rgb(247, 245, 242) 50%,#333333  50%,#333333  100%); 
-
+  --landigBg: linear-gradient(
+    to bottom,
+    rgb(247, 245, 242) 0%,
+    rgb(247, 245, 242) 50%,
+    rgb(247, 245, 242) 50%,
+    #333333 50%,
+    #333333 100%
+  );
 }
 
 html,
@@ -228,14 +236,12 @@ html.transition *:after {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   text-shadow: 1px 1px hsla(0, 0%, 5%, 1), -1px -1px #323233;
 
-
-  @media (min-width: 2000px) { 
-    height: 80px; 
+  @media (min-width: 2000px) {
+    height: 80px;
   }
 
-  @media (min-width: 3400px){ 
-    height: 130px; 
-
+  @media (min-width: 3400px) {
+    height: 130px;
   }
 
   & .container {
@@ -262,15 +268,14 @@ html.transition *:after {
       color: var(--navText);
     }
 
-    
-    @media (min-width: 2000px) {  
-        top: 30px;
-        font-size: 40px;
+    @media (min-width: 2000px) {
+      top: 30px;
+      font-size: 40px;
     }
 
-    @media (min-width: 3400px){ 
-        top: 60px;
-        font-size: 60px
+    @media (min-width: 3400px) {
+      top: 60px;
+      font-size: 60px;
     }
 
     @media (max-width: 767px) {
@@ -284,15 +289,12 @@ html.transition *:after {
   top: 10px;
   transition: all 0.15s ease-in-out;
 
-  
-    
-  @media (min-width: 2000px) {  
-    top : 20px ;
+  @media (min-width: 2000px) {
+    top: 20px;
   }
 
-  @media (min-width: 3400px){ 
-    top:40px;
-    
+  @media (min-width: 3400px) {
+    top: 40px;
   }
 
   & ul {
@@ -314,16 +316,14 @@ html.transition *:after {
     text-decoration: none;
     letter-spacing: 1px;
     transition: all 0.3s ease-in-out;
-    
-    
-  @media (min-width: 2000px) {  
+
+    @media (min-width: 2000px) {
       font-size: 25px;
-  }
+    }
 
-  @media (min-width: 3400px){ 
+    @media (min-width: 3400px) {
       font-size: 35px;
-  }
-
+    }
 
     &:hover {
       color: var(--navText);
@@ -332,17 +332,15 @@ html.transition *:after {
   .sitchTheme {
     margin: 0;
     top: 5px;
-       
-    @media (min-width: 2000px) {  
-        transform: scale(1.25)
+
+    @media (min-width: 2000px) {
+      transform: scale(1.25);
     }
-  
-    @media (min-width: 3400px){ 
+
+    @media (min-width: 3400px) {
       transform: scale(1.5);
       margin-left: 50px;
-  
     }
-  
   }
 }
 
@@ -521,14 +519,12 @@ html.transition *:after {
   width: 90%;
   text-align: center;
 
-       
-  @media (min-width: 2000px) {  
-      transform: translate(-50%,-50%) scale(2.5)
+  @media (min-width: 2000px) {
+    transform: translate(-50%, -50%) scale(2.5);
   }
 
-  @media (min-width: 3400px){ 
-    transform: translate(-50%,-50%) scale(4.0) !important
-
+  @media (min-width: 3400px) {
+    transform: translate(-50%, -50%) scale(4) !important;
   }
 
   @media screen and (min-width: 768px) {
@@ -547,9 +543,8 @@ html.transition *:after {
     color: var(--bg);
 
     @media screen and (max-width: 1200px) {
-      margin-bottom : 50px; 
+      margin-bottom: 50px;
     }
-
   }
 
   span {
@@ -576,22 +571,17 @@ html.transition *:after {
     padding: 0 10px;
     overflow: hidden;
 
-    
-    
-  @media (min-width: 2000px) {  
-        height: 32px
-  }
+    @media (min-width: 2000px) {
+      height: 32px;
+    }
 
-  @media (min-width: 3400px){ 
-    height: 35px
-    
-  }
-
+    @media (min-width: 3400px) {
+      height: 35px;
+    }
 
     @media screen and (min-width: 768px) {
       margin-top: 20px;
     }
-
   }
 
   .slider div {
@@ -643,41 +633,32 @@ html.transition *:after {
   margin: 10px 0;
   text-align: center;
   h2 {
-
-
-       
-    @media screen and (min-width: 2000px) {  
-      font-size: 28px; 
+    @media screen and (min-width: 2000px) {
+      font-size: 28px;
     }
 
-    @media screen and (min-width: 3400px){ 
+    @media screen and (min-width: 3400px) {
       font-size: 145px !important;
     }
 
-    
     @media screen and (min-width: 768px) {
       font-size: 50px;
     }
     @media screen and (min-width: 1024px) {
       font-size: 59px;
     }
-
-    
   }
 
   p {
     font-weight: bold;
 
-       
-    @media screen and (min-width: 2000px) {  
-      font-size: 22px; 
+    @media screen and (min-width: 2000px) {
+      font-size: 22px;
     }
 
-    @media screen and (min-width: 3400px){ 
-      font-size: 55px !important
-
+    @media screen and (min-width: 3400px) {
+      font-size: 55px !important;
     }
-
 
     @media screen and (min-width: 768px) {
       font-size: 23px;
@@ -685,10 +666,6 @@ html.transition *:after {
     @media screen and (min-width: 1024px) {
       font-size: 25px;
     }
-
-          
-     
-
   }
 }
 
@@ -711,15 +688,13 @@ html.transition *:after {
     font-size: 17px;
     letter-spacing: 1px;
 
-       
-    @media screen and (min-width: 2000px) {  
-      font-size: 25px !important;  
+    @media screen and (min-width: 2000px) {
+      font-size: 25px !important;
     }
 
-    @media screen and (min-width: 3400px){ 
-      font-size: 45px !important; 
-      line-height: 100px !important; 
-
+    @media screen and (min-width: 3400px) {
+      font-size: 45px !important;
+      line-height: 100px !important;
     }
 
     @media screen and (min-width: 768px) {
@@ -734,14 +709,13 @@ html.transition *:after {
 
   span {
     font-weight: bold;
-    letter-spacing: 1px;    
-    @media screen and (min-width: 2000px) {  
-      font-size: 25px;  
+    letter-spacing: 1px;
+    @media screen and (min-width: 2000px) {
+      font-size: 25px;
     }
 
-    @media screen and (min-width: 3400px){ 
-      font-size: 45px !important;  
-
+    @media screen and (min-width: 3400px) {
+      font-size: 45px !important;
     }
   }
   a {
@@ -752,14 +726,13 @@ html.transition *:after {
 
     &:hover {
       text-decoration: underline;
-    }    
-    @media screen and (min-width: 2000px) {  
-      font-size: 25px;  
+    }
+    @media screen and (min-width: 2000px) {
+      font-size: 25px;
     }
 
-    @media screen and (min-width: 3400px){ 
-      font-size: 45px !important;  
-
+    @media screen and (min-width: 3400px) {
+      font-size: 45px !important;
     }
   }
   .cv_text {
@@ -778,16 +751,35 @@ html.transition *:after {
     background: var(--color-text);
     color: var(--buttons_txt);
     text-decoration: none;
-       
-    @media screen and (min-width: 2000px) {  
-      transform: scale(1.2)
+    transition: 1000ms;
+
+    span#a {
+      display: inline;
+
+      color: var(--buttons_txt);
     }
 
-    @media screen and (min-width: 3400px){ 
-        padding: 15px 22px
+    &:hover span#a {
+      display: none;
     }
 
+    span#b {
+      display: none;
+    }
 
+    &:hover span#b {
+      display: inline;
+
+      color: var(--buttons_txt);
+    }
+
+    @media screen and (min-width: 2000px) {
+      transform: scale(1.2);
+    }
+
+    @media screen and (min-width: 3400px) {
+      padding: 15px 22px;
+    }
 
     &:hover {
       transition: 300ms;
@@ -836,7 +828,6 @@ html.transition *:after {
     background-color: var(--color-text);
     border: 1px solid var(--bg-panel);
     border-radius: 4px;
-  
 
     span {
       color: var(--color-red);
@@ -851,18 +842,16 @@ html.transition *:after {
       margin-left: 5px;
       background: var(--color-text);
       color: var(--bg-panel);
-              
-    @media screen and (min-width: 2000px) {  
-      font-size: 18px;
-      width: 75px;
-    }
 
-    @media screen and (min-width: 3400px){  
-      font-size: 40px;
-      width: 75px;
+      @media screen and (min-width: 2000px) {
+        font-size: 18px;
+        width: 75px;
+      }
 
-    }
-
+      @media screen and (min-width: 3400px) {
+        font-size: 40px;
+        width: 75px;
+      }
     }
     .development {
       font-size: 15px;
@@ -872,17 +861,15 @@ html.transition *:after {
       background: var(--color-text);
       color: var(--bg-panel);
 
-      @media screen and (min-width: 2000px) {  
+      @media screen and (min-width: 2000px) {
         font-size: 18px;
         width: 130px;
       }
-  
-      @media screen and (min-width: 3400px){ 
+
+      @media screen and (min-width: 3400px) {
         font-size: 35px;
         width: 130px;
-  
       }
-  
     }
 
     .future {
@@ -893,33 +880,28 @@ html.transition *:after {
       background: var(--color-text);
       color: var(--bg-panel);
 
-      @media screen and (min-width: 2000px) {  
+      @media screen and (min-width: 2000px) {
         font-size: 18px;
         width: 80px;
       }
-  
-      @media screen and (min-width: 3400px){ 
+
+      @media screen and (min-width: 3400px) {
         font-size: 35px;
         width: 80px;
-  
       }
-  
     }
 
     @media screen and (min-width: 1024px) {
       max-width: 400px;
     }
-    @media screen and (min-width: 2000px) {  
+    @media screen and (min-width: 2000px) {
       max-width: 550px;
-      padding: 39px 15px; 
+      padding: 39px 15px;
     }
- 
-     
-    @media screen and (min-width: 3400px) {  
-      max-width: 650px; 
-    }
- 
 
+    @media screen and (min-width: 3400px) {
+      max-width: 650px;
+    }
 
     .stack_img {
       color: var(--bg-panel);
@@ -935,30 +917,27 @@ html.transition *:after {
       letter-spacing: 2px;
       line-height: 20px;
 
-      @media screen and (min-width: 2000px) {  
-        font-size: 28px
-      }
-  
-      @media screen and (min-width: 3400px){
-        font-size: 40px;
-        line-height: 60px !important;
-  
+      @media screen and (min-width: 2000px) {
+        font-size: 28px;
       }
 
-      
+      @media screen and (min-width: 3400px) {
+        font-size: 40px;
+        line-height: 60px !important;
+      }
+
       @media screen and (min-width: 1024px) {
         line-height: 30px;
       }
 
-    
-      @media screen and (min-width: 2000px) {  
-        line-height:  40px;
+      @media screen and (min-width: 2000px) {
+        line-height: 40px;
       }
-  
-      @media screen and (min-width: 3400px){ 
-          font-size: 45px; 
+
+      @media screen and (min-width: 3400px) {
+        font-size: 45px;
       }
-  
+
       span {
         color: var(--color-red);
         font-weight: bold;
@@ -972,15 +951,14 @@ html.transition *:after {
 .projects__divider {
   width: 100%;
   margin: 20px 0;
-  text-align: center;   
-  @media screen and (min-width: 2000px) {  
+  text-align: center;
+  @media screen and (min-width: 2000px) {
     margin: 40px 0;
   }
 
-  @media screen and (min-width: 3400px){ 
-      margin: 60px 0;
+  @media screen and (min-width: 3400px) {
+    margin: 60px 0;
   }
-
 
   h2 {
     @media screen and (min-width: 768px) {
@@ -989,10 +967,9 @@ html.transition *:after {
     @media screen and (min-width: 1024px) {
       font-size: 59px;
     }
-    @media screen and (min-width: 3400px){ 
-        font-size: 150px;
+    @media screen and (min-width: 3400px) {
+      font-size: 150px;
     }
-  
   }
 }
 
@@ -1036,11 +1013,10 @@ html.transition *:after {
       width: 60%;
       margin: 100px auto;
     }
-      
+
     @media screen and (min-width: 3400) {
       grid-row-gap: 50px;
     }
-
 
     .image__site {
       width: 100%;
@@ -1082,41 +1058,33 @@ html.transition *:after {
     }
 
     .text__site {
-      width: 100%; 
+      width: 100%;
       text-align: center;
       letter-spacing: 1px;
- 
-      display: flex ; 
+
+      display: flex;
       justify-content: center;
       align-items: center;
-
 
       p {
         margin: 20px 0;
         line-height: 35px;
 
-           
-      @media screen and (min-width: 2000px) {  
-            font-size: 24px
-      }
+        @media screen and (min-width: 2000px) {
+          font-size: 24px;
+        }
 
-      @media screen and (min-width: 3400px){ 
-            font-size: 50px;
-            margin: 60px 0;
-            line-height: 75px;       
-
-      }
-
-
+        @media screen and (min-width: 3400px) {
+          font-size: 50px;
+          margin: 60px 0;
+          line-height: 75px;
+        }
       }
 
       .button__row {
         display: flex;
         justify-content: space-evenly;
         margin: 0 auto;
-
-         
-
 
         .code_preview {
           padding: 7px 10px;
@@ -1127,16 +1095,15 @@ html.transition *:after {
           background: var(--color-text);
           color: var(--bg-panel);
           text-decoration: none;
-          margin: 0  ;
+          margin: 0;
 
-                   
-        @media screen and (min-width: 2000px) {  
+          @media screen and (min-width: 2000px) {
             font-size: 21px;
-        }
+          }
 
-        @media screen and (min-width: 3400px){ 
-          font-size: 50px;
-         }
+          @media screen and (min-width: 3400px) {
+            font-size: 50px;
+          }
 
           &:hover {
             transition: 300ms;
@@ -1151,17 +1118,13 @@ html.transition *:after {
         justify-content: space-around;
         padding: 20px 0;
 
-           
-    @media screen and (min-width: 2000px) {  
-      font-size: 22px; 
-    }
+        @media screen and (min-width: 2000px) {
+          font-size: 22px;
+        }
 
-    @media screen and (min-width: 3400px){ 
-      font-size: 45px;
-
-    }
-
-
+        @media screen and (min-width: 3400px) {
+          font-size: 45px;
+        }
 
         @media screen and (min-width: 1024px) {
           margin: 0;
@@ -1206,16 +1169,14 @@ html.transition *:after {
     @media screen and (min-width: 768px) {
       font-size: 21px;
     }
-    
-    @media screen and (min-width: 2000px) {  
-      font-size : 26px;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 26px;
     }
 
-    @media screen and (min-width: 3400px){ 
-      font-size : 50px !important;
-
+    @media screen and (min-width: 3400px) {
+      font-size: 50px !important;
     }
-
   }
 
   .contact_ul {
@@ -1242,16 +1203,14 @@ html.transition *:after {
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-    
-      @media screen and (min-width: 2000px) {  
-        transform: scale(1.3)
+
+      @media screen and (min-width: 2000px) {
+        transform: scale(1.3);
       }
-  
-      @media screen and (min-width: 3400px){ 
-        transform: scale(1.5)
-  
+
+      @media screen and (min-width: 3400px) {
+        transform: scale(1.5);
       }
-  
 
       i {
         position: absolute;
@@ -1379,16 +1338,14 @@ footer {
     transform: translate(-50%, -50%);
     color: var(--bg);
     font-size: 22px;
-    
-    @media screen and (min-width: 2000px) {  
+
+    @media screen and (min-width: 2000px) {
       font-size: 27px;
     }
 
-    @media screen and (min-width: 3400px){ 
-
+    @media screen and (min-width: 3400px) {
       font-size: 50px;
     }
-
   }
 }
 

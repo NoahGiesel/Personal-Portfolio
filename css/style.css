@@ -55,7 +55,14 @@ html {
   --spans: #333333;
   --navText: #ff1f3d;
   --navBar: rgba(53, 53, 53, 0.89);
-  --landigBg:  linear-gradient(to bottom, #333333 0%,#333333  50%,#333333  50%,rgb(247, 245, 242) 50%,rgb(247, 245, 242) 100%);
+  --landigBg: linear-gradient(
+    to bottom,
+    #333333 0%,
+    #333333 50%,
+    #333333 50%,
+    rgb(247, 245, 242) 50%,
+    rgb(247, 245, 242) 100%
+  );
 }
 
 html[data-theme="dark"] {
@@ -70,7 +77,14 @@ html[data-theme="dark"] {
   --buttons: #ff1f3d;
   --navText: #fffbfb;
   --spans: #ff1f3d;
-  --landigBg:  linear-gradient(to bottom,rgb(247, 245, 242) 0%,rgb(247, 245, 242) 50%,rgb(247, 245, 242) 50%,#333333  50%,#333333  100%);
+  --landigBg: linear-gradient(
+    to bottom,
+    rgb(247, 245, 242) 0%,
+    rgb(247, 245, 242) 50%,
+    rgb(247, 245, 242) 50%,
+    #333333 50%,
+    #333333 100%
+  );
 }
 
 html,
@@ -857,6 +871,26 @@ html.transition *:after {
   background: var(--color-text);
   color: var(--buttons_txt);
   text-decoration: none;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+}
+
+.aboutMe__section .curriculumV span#a {
+  display: inline;
+  color: var(--buttons_txt);
+}
+
+.aboutMe__section .curriculumV:hover span#a {
+  display: none;
+}
+
+.aboutMe__section .curriculumV span#b {
+  display: none;
+}
+
+.aboutMe__section .curriculumV:hover span#b {
+  display: inline;
+  color: var(--buttons_txt);
 }
 
 @media screen and (min-width: 2000px) {
