@@ -751,7 +751,7 @@ html.transition *:after {
     background: var(--color-text);
     color: var(--buttons_txt);
     text-decoration: none;
-    transition: 1000ms;
+    transition: 1000ms; 
 
     span#a {
       display: inline;
@@ -765,6 +765,7 @@ html.transition *:after {
 
     span#b {
       display: none;
+ 
     }
 
     &:hover span#b {
