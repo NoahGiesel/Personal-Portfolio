@@ -1434,20 +1434,37 @@ html.transition *:after {
 .contact__section .contact_ul {
   width: 40%;
   margin: 80px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .contact__section .contact_ul {
+    width: 100%;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__section .contact_ul {
+    width: 100%;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 4rem;
+  }
 }
 
 .contact__section .contact_ul a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
   .contact__section .contact_ul a {
-    margin: 0 10px;
+    margin: 0 auto;
   }
 }
 
@@ -1582,6 +1599,18 @@ html.transition *:after {
 
 .contact__section .contact_ul .twitter:hover:before {
   border-bottom: 25px solid #04d9ff !important;
+}
+
+.contact__section .contact_ul .blog:hover {
+  background: #04ff04 !important;
+}
+
+.contact__section .contact_ul .blog:hover:after {
+  border-top: 25px solid #04ff04 !important;
+}
+
+.contact__section .contact_ul .blog:hover:before {
+  border-bottom: 25px solid #04ff04 !important;
 }
 
 footer {

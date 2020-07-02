@@ -1184,14 +1184,29 @@ html.transition *:after {
   .contact_ul {
     width: 40%;
     margin: 80px auto;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    
+    @media screen and (max-width: 1050px) {
+      width: 100%;
+      grid-template-columns: auto auto  ; 
+      grid-gap: 5rem;
+
+    }
+    
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      grid-template-columns: auto auto  ; 
+      grid-gap: 4rem;
+
+    }
+
 
     a {
       text-decoration: none;
 
-      @media screen and (max-width: 768px) {
-        margin: 0 10px;
+      @media screen and (max-width: 1050px) {
+        margin: 0 auto;  
       }
     }
     #hexagon {
@@ -1325,8 +1340,25 @@ html.transition *:after {
     .twitter:hover:before {
       border-bottom: 25px solid rgb(4, 217, 255) !important;
     }
+    // blog
+    .blog:hover {
+      background: rgb(4, 255, 4) !important;
+    }
+
+    .blog:hover:after {
+      border-top: 25px solid rgb(4, 255, 4) !important;
+    }
+    .blog:hover:before {
+      border-bottom: 25px solid rgb(4, 255, 4) !important;
+    }
   }
 }
+
+ 
+
+
+
+
 
 footer {
   height: 20vh;
